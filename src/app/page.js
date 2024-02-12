@@ -1,5 +1,3 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Head from "next/head";
 import Events from "./component/events/Events";
 import Slider from "./component/slider/Slider";
@@ -12,8 +10,9 @@ export default function Home() {
   
   return (
     <main >
+      <Slider/>
      {/* <Events/> */}
-     {/* <Slider/> */}
+     
      <Map/>
     </main>
   );

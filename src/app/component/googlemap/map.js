@@ -1,19 +1,19 @@
-// pages/index.js
 'use client'
-import EventMap from "./eventmap";
-const events = [
-  { id: 1, name: 'Event 1', lat: 28.704060, lng: 77.102493 },
-  { id: 2, name: 'Event 2', lat: 34.0522, lng: -118.2437 },
-  // Add more events as needed
-];
 
-const Map = () => {
+import React from "react";
+import dynamic from "next/dynamic";
+
+export default function Home() {
+  const MapWithNoSSR = dynamic(() => import("./EventMapLeaflet"), {
+    ssr: false
+  });
+
   return (
-    <div>
-      <h1>Event Map</h1>
-      <EventMap events={events} />
-    </div>
+    <main id="eventOnMap">
+        <p className="fs-4 text-center text-shadow-effect">Visualize events geographically on a map.</p>
+      <div id="map">
+        <MapWithNoSSR />
+      </div>
+    </main>
   );
-};
-
-export default Map;
+}

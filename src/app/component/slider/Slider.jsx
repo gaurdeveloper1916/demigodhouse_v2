@@ -38,16 +38,14 @@ const initialImages = [
 // Carousel
 const Slider = () => {
   const [images, setImages] = useState(initialImages);
-
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(images[currentIndex]);
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       moveItems();
-  //     }, 3000);
+    useEffect(() => {
+      const interval = setInterval(() => {
+        moveItems();
+      }, 2000);
 
-  //     return () => clearInterval(interval);
-  //   }, [currentIndex]);
+      return () => clearInterval(interval);
+    }, [currentIndex]);
 
   const moveItems = () => {
     // Get the next index
@@ -69,7 +67,7 @@ const Slider = () => {
   return (
     <>
       <div className="container-fluid p-0">
-      {/* <div className="col-lg-12 d-flex justify-content-between">
+        {/* <div className="col-lg-12 d-flex justify-content-between">
             <div>
             <img
               style={{ width: "190px", height: "94px" }}
@@ -93,34 +91,39 @@ const Slider = () => {
             </div>
             </div> */}
         <div
-         style={{
+          className="d-flex justify-space-between flex-lg-row flex-column event-container"
+          style={{
             backgroundImage: `url(${images[currentIndex].img})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            padding:'8rem'
+            padding: "5rem",
+         
           }}
-        className="d-flex justify-space-between flex-lg-row flex-column">
-           
+        >
           <div className="col-lg-5 p-3 ">
-          <img
+            <img
               style={{ width: "190px", height: "94px" }}
               src="./asserts/images/demigodnew.png"
             ></img>
             <p className="text-white">2023 | 1hour 40 Minutes | Horror</p>
-            <p className="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita harum reprehenderit
-                 facilis unde voluptatem quaerat nihil magnam. 
-                Nemo eos labore, error autem at quam ad, impedit exercitationem aut nostrum enim?</p>
-                <div className="d-flex gap-3">
-                    <button className="text-white bg-warning" type="button ">Watch</button>
-                    <button className="text-white bg-black" type="button ">My List</button>
-                </div>
+            <p className="text-white">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
+              harum reprehenderit facilis unde voluptatem quaerat nihil magnam.
+              Nemo eos labore, error autem at quam ad, impedit exercitationem
+              aut nostrum enim?
+            </p>
+            <div className="d-flex gap-3">
+              <button className="text-white bg-warning" type="button ">
+                Watch
+              </button>
+              <button className="text-white bg-black" type="button ">
+                My List
+              </button>
+            </div>
           </div>
           <div className="col-lg-7">
-            <div
-             
-              className="carousel-container "
-            >
+            <div className="carousel-container ">
               <div className="d-flex flex-column">
                 <div className="carousel-items">
                   {/* Render 5 items on the screen */}
@@ -136,6 +139,7 @@ const Slider = () => {
                         ];
                       return (
                         <div
+                      
                           key={index}
                           className={`${index === 2 ? "center" : "opacity"} ${
                             (index === 0 || index === 4) &&
@@ -154,12 +158,18 @@ const Slider = () => {
                             )
                           }
                         >
-                          <img src={imageItem.img} alt="item" />
+                          <img className="h-50" src={imageItem.img} alt="item" />
                         </div>
                       );
                     })}
                 </div>
-                {/* <div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div>
                   <div className="description">
                     <p>
                       <b>{images[currentIndex].name}</b>
@@ -167,11 +177,6 @@ const Slider = () => {
                     <p>{images[currentIndex].desc}</p>
                   </div>
                 </div> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 };

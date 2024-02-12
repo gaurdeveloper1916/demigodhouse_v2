@@ -13,8 +13,6 @@ function Navbar() {
     "Catering",
     "Media",
     "Journel",
-
-
   ];
   return (
     <>
@@ -27,44 +25,62 @@ function Navbar() {
             ></img>
           </div>{" "}
           <div className="d-flex gap-2">
-          <CiLocationOn
-                className="cursor-pointer d-lg-none d-block"
-                color="yellow"
-                size={40}
-              />
-              <CiUser className="cursor-pointer d-lg-none d-block" color="yellow " size={40} />
-          <button
-            className="navbar-toggler bg-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-         
+            <CiLocationOn
+              className="cursor-pointer d-lg-none d-block"
+              color="yellow"
+              size={40}
+            />
+            <CiUser
+              className="cursor-pointer d-lg-none d-block"
+              color="yellow "
+              size={40}
+            />
+            <button
+              className="navbar-toggler bg-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
           </div>
-          <div className="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
-            <div className="d-flex gap-4  align-items-center" role="search">
-              <ul className="navbar-nav ml-auto d-flex gap-4">
+          <div
+            className="collapse navbar-collapse  justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <div className="d-flex   align-items-center" role="search">
+              <ul className="navbar-nav ml-auto d-flex ">
                 {navItem.map((item, i) => {
                   return (
-                    <li style={{textDecoration:'none'}} key={i + 1} className="nav-item mt-3 ">
-                      <a   href="" className="nav-link active ">
+                    <li
+                      style={{ textDecoration: "none" }}
+                      key={i + 1}
+                      className="nav-item mt-3 "
+                    >
+                      <a href="" className="nav-link active ">
                         <p className="item-test p-2 fs-6">{item}</p>
                       </a>
                     </li>
                   );
                 })}
               </ul>
-              <CiLocationOn
+             <div className="d-flex gap-3">
+          <a href="/#eventOnMap">
+          <CiLocationOn
                 className="cursor-pointer d-lg-block d-none"
                 color="yellow"
                 size={30}
               />
-              <CiUser className="cursor-pointer d-lg-block d-none" color="yellow " size={30} />
+          </a>
+              <CiUser
+                className="cursor-pointer d-lg-block d-none"
+                color="yellow "
+                size={30}
+              />
+             </div>
             </div>
           </div>
           {/* <div className="collapse navbar-collapse  justify-content-end">
