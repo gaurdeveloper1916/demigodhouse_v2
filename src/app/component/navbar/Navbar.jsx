@@ -40,8 +40,8 @@ function Navbar() {
     </div>
     <div className="collapse d-flex justify-content-end align-items-center navbar-collapse " id="navbarSupportedContent">
   <ul className="navbar-nav d-flex justify-content-center align-items-center ">
-    {navItem.map((item, i) => (
-      <li key={i + 1} className="nav-item ">
+  {navItem.map((item, i) => (
+      <li key={i + 1} className="nav-item hovermenu_list">
         <a href="" className="nav-link active mt-2">
           <p className="item-test p-2 fs-6">{item}</p>
         </a>

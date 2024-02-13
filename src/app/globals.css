@@ -214,6 +214,25 @@ button {
 .text-shadow-effect {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.hovermenu_list a p:hover {
+  color: #EBC013 ;
+}
+.hovermenu_list {
+  position: relative;
+}
+.hovermenu_list::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 17px;
+  left: 0;
+  background-color: #EBC013;
+  transition: width 0.3s ease;
+}
+.hovermenu_list:hover::before {
+  width: 100%;
+}
 /* .leaflet-tile {
     filter: hue-rotate(45deg) !important;
 } */
