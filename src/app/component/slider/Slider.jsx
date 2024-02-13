@@ -98,7 +98,7 @@ const Slider = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             padding: "5rem",
-         
+            transition: "background-image 0.5s ease-in-out",
           }}
         >
           <div className="col-lg-5 p-3 ">
@@ -114,10 +114,10 @@ const Slider = () => {
               aut nostrum enim?
             </p>
             <div className="d-flex gap-3">
-              <button className="text-white bg-warning" type="button ">
+              <button className="text-white bg-warning rounded border-none px-4" type="button ">
                 Watch
               </button>
-              <button className="text-white bg-black" type="button ">
+              <button className="text-white bg-black rounded border-none px-4" type="button ">
                 My List
               </button>
             </div>

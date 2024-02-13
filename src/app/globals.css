@@ -1,16 +1,15 @@
-.cursor-pointer{
+cursor-pointer{
   cursor: pointer;
 }
 .item-test {
   color: white;
-  
 }
 /* Add the hover effect */
 .item-test:hover {
-  border-top: 2px solid #ebc013;
-  border-left: 2px solid #ebc013;
-  color: #ebc013;
-  font-size: 25px;
+  /* border-top: 2px solid #EBC013;
+  border-left: 2px solid #EBC013;
+  color: #EBC013; */
+  /* font-size: 25px; */
 }
 .footer-cont{
   background-image: url('https://www.demigodhouse.com/assets/images/index_footer_bg.webp');
@@ -18,7 +17,7 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 .text-web{
-  color: #ebc013;
+  color: #EBC013;
 }
 .text-dec{
   text-decoration: none;
@@ -29,7 +28,6 @@ background-size: cover;
 .h-fs-custom{
   font-size: 17px;
 }
-
 /* card css */
 .container-event {
   min-height: 100vh;
@@ -38,11 +36,9 @@ background-size: cover;
   align-items: center;
   justify-content: center
 }
-
 /* p {
   margin: 0px
 } */
-
 .card {
   width: 280px;
   height: 520px;
@@ -54,65 +50,55 @@ background-size: cover;
   z-index: 10;
   overflow: hidden
 }
-
 .card .backgroundEffect {
   bottom: 0;
   height: 0px;
   width: 100%
 }
-
 .card:hover {
   color: #fff;
   transform: scale(1.025);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
 }
-
 .card:hover .backgroundEffect {
   bottom: 0;
   height: 320px;
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: #ebc013;
+  background: #EBC013;
   animation: popBackground 0.3s ease-in
 }
-
 @keyframes popBackground {
   0% {
       height: 20px;
       border-top-left-radius: 50%;
       border-top-right-radius: 50%
   }
-
   50% {
       height: 80px;
       border-top-left-radius: 75%;
       border-top-right-radius: 75%
   }
-
   75% {
       height: 160px;
       border-top-left-radius: 85%;
       border-top-right-radius: 85%
   }
-
   100% {
       height: 320px;
       border-top-left-radius: 100%;
       border-top-right-radius: 100%
   }
 }
-
 .card .pic {
   position: relative
 }
-
 .card .pic img {
   width: 100%;
   height: 280px;
   object-fit: cover
 }
-
 .card .date {
   display: flex;
   flex-direction: column;
@@ -120,66 +106,55 @@ background-size: cover;
   justify-content: center;
   width: 50px;
   height: 70px;
-  background-color: #ebc013;
+  background-color: #EBC013;
   color: white;
   position: absolute;
   bottom: 0px;
   transition: all ease
 }
-
 .card .date .day {
   font-size: 14px;
   font-weight: 600
 }
-
 .card .date .month,
 .card .date .year {
   font-size: 10px
 }
-
 .card .text-muted {
   font-size: 12px
 }
-
 .card:hover .text-muted {
   color: #fff !important
 }
-
 .card .content {
   padding: 0 20px
 }
-
 .card .content .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px 10px;
-  background-color: #ebc013;
+  background-color: #EBC013;
   border-radius: 25px;
   font-size: 12px;
   border: none
 }
-
 .card:hover .content .btn {
   background: #fff;
-  color: #ebc013;
+  color: #EBC013;
   box-shadow: #0000001a 0px 3px 5px
 }
-
 .card .content .btn .fas {
   font-size: 10px;
   padding-left: 5px
 }
-
 .card .content .foot .admin {
-  color: #ebc013;
+  color: #EBC013;
   font-size: 12px
 }
-
 .card:hover .content .foot .admin {
   color: #fff
 }
-
 .card .content .foot .icon {
   font-size: 12px
 }
@@ -190,18 +165,16 @@ background-size: cover;
   justify-content: center;
   padding: 20px;
 }
-
 .carousel-items {
   display: flex;
   align-items: center;
+  transition: transform 0.5s ease-in-out;
 }
-
 .carousel-item {
   margin: 0 5px;
   transition: transform 0.3s;
   flex: 0 0 20%;
 }
-
 img {
   max-width: 150px;
   max-height: 150px;
@@ -209,22 +182,18 @@ img {
   border-radius: 7px;
   /* border-radius: 50%; */
 }
-
 .center {
   transform: scale(1.5);
   margin: 37px;
   opacity: none;
 }
-
 .opacity {
   opacity: 0.7;
 }
-
 .end {
   transform: scale(0.6);
   margin: -15px;
 }
-
 button {
   font-size: 24px;
   padding: 5px 10px;
@@ -235,14 +204,12 @@ button {
   width: 100%;
   height: 400px;
 }
-
 .leaflet-container {
   height: 100%;
   width: 100%;
 }
 .event-container {
   padding:'5rem'
-  
 }
 .text-shadow-effect {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
