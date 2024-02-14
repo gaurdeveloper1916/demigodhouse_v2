@@ -103,6 +103,7 @@ const Slider = () => {
         >
           <div className="col-lg-5 p-3 ">
             <img
+            className="img-home-slider"
               style={{ width: "190px", height: "94px" }}
               src="./asserts/images/demigodnew.png"
             ></img>
@@ -158,7 +159,7 @@ const Slider = () => {
                             )
                           }
                         >
-                          <img className="h-50" src={imageItem.img} alt="item" />
+                          <img className="h-50 img-home-slider" src={imageItem.img} alt="item" />
                         </div>
                       );
                     })}

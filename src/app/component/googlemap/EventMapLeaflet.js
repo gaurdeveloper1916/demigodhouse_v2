@@ -34,7 +34,7 @@ const eventList=[
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="http://mt0.google.com/vt/lyrs=p&hl=en&x={x}&y={y}&z={z}"
+        url="http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}"
       />
       {
         eventList.map((item,i)=>{
@@ -42,7 +42,7 @@ const eventList=[
                 <Marker position={item.position} draggable={true} animate={true}>
                 <Popup>
                       <div className="" >
-                        <img className=" w-full" src={item.image}/>
+                        <img className=" w-75" src={item.image}/>
                         <div className="card-body p-2">
                           <h5 className="card-title m-0">{item.tiltle}</h5>
                           <p className="card-text">
