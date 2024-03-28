@@ -44,7 +44,7 @@ function Footer(props) {
       <div className="container-fluid  px-0">
         <footer className="footer-cont text-center text-lg-start text-white">
           <div className="container p-4">
-            <div className="row ">
+            <div className="d-flex justify-content-center align-items-center ">
               <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <div className="  d-flex a ">
                   <img

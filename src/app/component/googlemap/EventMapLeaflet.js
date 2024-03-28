@@ -2,8 +2,6 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
-import { FaCross } from "react-icons/fa";
-
 const Map = () => {
 const eventList=[
     {
@@ -34,7 +32,9 @@ const eventList=[
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}"
+        url="https://server.arcgisonline.com/ArcGIS/rest/services/canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}
+
+        "
       />
       {
         eventList.map((item,i)=>{

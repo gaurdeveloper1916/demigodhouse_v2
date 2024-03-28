@@ -342,3 +342,158 @@ button {
   height: 100%;
   object-fit: cover;
 }
+
+
+.test-button{
+  /* display: none; */
+  /* padding: 0px 10px 0px 10px; */
+  opacity: 0;
+  border: none;
+  border-radius: 1px solid black;
+}
+.zoom{
+  transition: transform 0.3s ease;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5)
+}
+.zoom:hover {
+  transform: scale(1.1);
+}
+.zoom:hover .test-button{
+  /* display: block !important; */
+  opacity: 1;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.accodationBorder{
+border: none !important;
+}
+.accodationBorder:focus{
+  /* background-color: #000; */
+  border: none !important;
+  border-color: #000 !important;
+}
+.accordation-bg{
+background-color: #000 !important;
+border: none !important;
+
+}
+.accordion-button:not(.collapsed) {
+  /* color: var(--bs-accordion-active-color); */
+  background-color: transparent !important;
+  border-color: white !important;
+}
+.accordationheading{
+  color: rgb(233, 233, 30) !important;
+  font-size: 24px !important;
+    font-weight: 800;
+}
+.bg-dark-black{
+  background-color: #000;
+}
+.accordion-button:focus {
+  z-index: 0 !important;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+  color: white !important;
+}
+.accordion-button::after{
+  color: white !important;
+}
+.membership-title{
+  font-size: 35px;
+    font-weight: 700;
+}
+.img-membership{
+  border-radius: 80px;
+}
+
+
+/* img swiper */
+
+
+.swiper {
+  position: relative;
+	/* width: 800px; */
+	margin-inline: auto;
+  --body-color: #dcdcdc;
+}
+
+.swiper::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: -10%;
+  width: 120%;
+  height: 100px;
+  background: #000000;
+  border-radius: 100%;
+  z-index: 100;
+}
+
+.swiper::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: -10%;
+  width: 120%;
+  height: 100px;
+  background: #000000;
+  border-radius: 100%;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+.mySwiper {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+
+.swiper-slide-global {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide-global img {
+  display: block;
+  width: 100%;
+}
+
+
