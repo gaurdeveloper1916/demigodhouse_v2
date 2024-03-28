@@ -496,4 +496,7 @@ border: none !important;
   width: 100%;
 }
 
-
+/* globalevents slider */
+.global-event-img{
+  border-radius: 20px;
+}
