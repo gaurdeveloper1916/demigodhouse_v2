@@ -8,6 +8,7 @@ import Domesticevets from "./component/domesticevents/Domesticevets";
 import Membership from "./component/membership/Membership";
 import Curveslider from "./component/curveslider/Curveslider";
 import Globalevents from "./component/globalevents/Globalevents";
+import Booknow from "./component/booknow/Booknow";
 
 export default function Home() {
   <Head>
@@ -25,6 +26,7 @@ export default function Home() {
      <Membership/>
      <Curveslider/>
 <Globalevents/>
+<Booknow/>
       {/* <Domesticevets/> */}
      {/* <Sliderr/> */}
     </main>
