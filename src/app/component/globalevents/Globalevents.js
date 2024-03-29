@@ -23,26 +23,26 @@ function Globalevents() {
   <div className="d-flex justify-content-center align-items-center">
   <div className="col-lg-10">
   <Slider {...settings}>
-    <div>
+    <div className="col-6">
       <img
         className="w-100 img-fluid global-event-img"
-        src="https://img.freepik.com/free-photo/medium-shot-kid-cheating-school-test_23-2150104930.jpg?size=626&ext=jpg"
+        src="./asserts/images/canada.png"
         alt=""
         style={{ maxHeight: "500px", height: "auto" }} // Adjust height as needed
       />
     </div>
-    <div>
+    <div className="col-6">
       <img
         className="w-100 img-fluid global-event-img"
-        src="https://t3.ftcdn.net/jpg/06/99/52/94/240_F_699529470_u7ZaG6otV8Cnn5WwHFc8YowT9IRXhFr8.jpg"
+        src="./asserts/images/dubai.png"
         alt=""
         style={{ maxHeight: "500px", height: "auto" }} // Adjust height as needed
       />
     </div>
-    <div>
+    <div className="col-6">
       <img
         className="w-100 img-fluid global-event-img"
-        src="https://img.freepik.com/free-photo/horror-scene-with-eerie-classroom_23-2150975108.jpg?size=626&ext=jpg&uid=R137210381&ga=GA1.1.2086156045.1707366156&semt=sph"
+        src="./asserts/images/indonesia.png"
         alt=""
         style={{ maxHeight: "500px", height: "auto" }} // Adjust height as needed
       />
