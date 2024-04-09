@@ -9,26 +9,26 @@ import Membership from "./component/membership/Membership";
 import Curveslider from "./component/curveslider/Curveslider";
 import Globalevents from "./component/globalevents/Globalevents";
 import Booknow from "./component/booknow/Booknow";
+import MultiMarquee from "./component/multimarquee/MultiMarquee";
 
 export default function Home() {
   <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </Head>
-  
+  </Head>;
+
   return (
-    <main 
-    className="bg-dark-black" 
-    >
-      <Slider/>
-     {/* <Events/> */}
-     <Map/>
-     <Explore/>
-     <Membership/>
-     <Curveslider/>
-<Globalevents/>
-<Booknow/>
+    <main className="bg-dark-black">
+      <Slider />
+      {/* <Events/> */}
+      <Map />
+      <Explore />
+      <Membership />
+      <Curveslider />
+      <Globalevents />
+      <Booknow />
+      <MultiMarquee/>
       {/* <Domesticevets/> */}
-     {/* <Sliderr/> */}
+      {/* <Sliderr/> */}
     </main>
   );
 }

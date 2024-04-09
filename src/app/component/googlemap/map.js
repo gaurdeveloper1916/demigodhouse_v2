@@ -1,8 +1,6 @@
 'use client'
-
 import React from "react";
 import dynamic from "next/dynamic";
-
 export default function Home() {
   const MapWithNoSSR = dynamic(() => import("./EventMapLeaflet"), {
     ssr: false
