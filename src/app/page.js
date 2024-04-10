@@ -10,6 +10,8 @@ import Curveslider from "./component/curveslider/Curveslider";
 import Globalevents from "./component/globalevents/Globalevents";
 import Booknow from "./component/booknow/Booknow";
 import MultiMarquee from "./component/multimarquee/MultiMarquee";
+import EventsCarousel from "./component/EventsCarousel/EventsCarousel";
+import Flipcards from "./component/FlipCards/Flipcards";
 
 export default function Home() {
   <Head>
@@ -27,6 +29,9 @@ export default function Home() {
       <Globalevents />
       <Booknow />
       <MultiMarquee/>
+      <EventsCarousel/>
+      <Flipcards/>
+
       {/* <Domesticevets/> */}
       {/* <Sliderr/> */}
     </main>
