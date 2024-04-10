@@ -2,7 +2,16 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
+import { FaLocationDot } from "react-icons/fa6";
 const Map = () => {
+  const yellowIcon = new L.Icon({
+    iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  });
 const eventList=[
     {
         position:[28.7041, 77.1025],
@@ -37,12 +46,13 @@ const eventList=[
         "
       />
       {
-        eventList.map((item,i)=>{
+        eventList.map((item,i)=>{ 
             return(
-                <Marker position={item.position} draggable={true} animate={true}>
+                <Marker position={item.position} draggable={true} animate={true} icon={yellowIcon
+              }>
                 <Popup>
                       <div className="" >
-                        <img className=" w-75" src={item.image}/>
+                        <img className="w-75" src={item.image}/>
                         <div className="card-body p-2">
                           <h5 className="card-title m-0">{item.tiltle}</h5>
                           <p className="card-text">
