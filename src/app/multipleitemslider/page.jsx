@@ -12,6 +12,7 @@ import Sliderr from '../component/category/Slider';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SliderEvent from './sliderEvent';
+import Flipcards from '../component/FlipCards/Flipcards';
 
 const ImageGallery = () => {
   const [backgroundImage, setBackgroundImage] = useState('https://img.freepik.com/free-photo/vibrant-scene-with-dj-techno-party_23-2150551537.jpg?ga=GA1.1.1887626236.1712805731&');
@@ -150,6 +151,7 @@ const ImageGallery = () => {
   );
    </div>
    {/* <SliderEvent/> */}
+   <Flipcards/>
   </div>
   );
 };
