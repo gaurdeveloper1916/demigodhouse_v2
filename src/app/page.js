@@ -30,7 +30,7 @@ export default function Home() {
       <Booknow />
       <MultiMarquee/>
       <EventsCarousel/>
-      <Flipcards/>
+      {/* <Flipcards/> */}
 
       {/* <Domesticevets/> */}
       {/* <Sliderr/> */}

@@ -44,7 +44,7 @@ const Sliderr = () => {
 
           <div className="min-h-screen ">
             <div className="slider__wrapper">
-              <div className="slider__inner py-5">
+              <div className="slider__inner ">
                 {/* {Array.from({ length: 5 }, (_, index) => (
                   <div
                     key={index}

@@ -7,7 +7,6 @@ import "swiper/swiper-bundle.css";
 
 const Curveslider = () => {
   const swiperRef = useRef(null);
-  console.log(swiperRef);
   useEffect(() => {
     swiperRef.current = new Swiper(".swiper", {
       loop: true,
@@ -29,12 +28,12 @@ const Curveslider = () => {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <link
           rel="stylesheet"
           href="https://unpkg.com/swiper/swiper-bundle.min.css"
         />
-      </Head>
+      </Head> */}
       {swiperRef === null ? (
         <p>Loading....</p>
       ) : (
