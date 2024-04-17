@@ -42,24 +42,10 @@ const Sliderr = () => {
   ];
   return (
 
-          <div className="min-h-screen ">
-            <div className="slider__wrapper">
+          <div className="min-h-screen mt-3 ">
+            <div className="">
               <div className="slider__inner ">
-                {/* {Array.from({ length: 5 }, (_, index) => (
-                  <div
-                    key={index}
-                    className={`slide ${active === index ? "active" : ""}`}
-                    onClick={() => handleSlideClick(index)}
-                  >
-                    <img  className="w-100"
-                      src="https://plus.unsplash.com/premium_photo-1707699571929-0675e66a4873?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8"
-                      alt=""
-                    />
-                    <h1>User Name</h1>
-                    <div className="desc">
-                    </div>
-                  </div>
-                ))} */}
+              
                 {initialImages.map((item,index) => {
                   return (
                     <>

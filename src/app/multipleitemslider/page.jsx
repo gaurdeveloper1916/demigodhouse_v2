@@ -13,6 +13,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SliderEvent from './sliderEvent';
 import Flipcards from '../component/FlipCards/Flipcards';
+import GetTickets from './GetTickets';
+import CarouselEvents from './slider';
 
 const ImageGallery = () => {
   const [backgroundImage, setBackgroundImage] = useState('https://img.freepik.com/free-photo/vibrant-scene-with-dj-techno-party_23-2150551537.jpg?ga=GA1.1.1887626236.1712805731&');
@@ -88,7 +90,7 @@ const ImageGallery = () => {
 
   return (
   <div className='bg-dark'>
-      <div className="container-event-1 ">
+      <div className="container-event-1  ">
      
       <div className="image-container-event">
       <div className="event-details col-lg-6 p-5">
@@ -115,7 +117,11 @@ const ImageGallery = () => {
   
     </div>
    <Sliderr/>
-   <div>
+   <CarouselEvents/>
+   <GetTickets/>
+   <Flipcards/>
+   <EventsCarousel/>
+   {/* <div>
    (
     <div className="parent p-5">
       <Carousel
@@ -149,9 +155,10 @@ const ImageGallery = () => {
       </Carousel>
     </div>
   );
-   </div>
+   </div> */}
    {/* <SliderEvent/> */}
-   <Flipcards/>
+  
+  
   </div>
   );
 };

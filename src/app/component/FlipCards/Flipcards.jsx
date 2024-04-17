@@ -5,18 +5,15 @@ const Flipcards = () => {
   return (
     <div>
       <div className="row">
-        <div className="col-lg-3">
-          <div class="wrapper" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
+        <div className="col-lg-3  bg-warning">
+          <div class="wrapper " ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper ">
               <div
                 style={{
                   backgroundImage: `url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg)`,
                 }}
                 class="card-front rounded"
               >
-                
-
-               
                 <div className=" d-flex flex-column position-absolute bottom-0 p-1">
                   <p
                     style={{ textAlign: "start" }}
@@ -34,7 +31,7 @@ const Flipcards = () => {
                 </div>
                 
               </div>
-              <div class="card-back p-4 mt-2">
+              <div class="card-back  rounded p-4 mt-2">
                 <div className="d-flex flex-column">
 
                 </div>
@@ -50,7 +47,7 @@ const Flipcards = () => {
                   eligendi,{" "}
                 </p>
                 <div className="d-flex justify-content-end">
-                <button style={{ textAlign: "end" }} className="rounded p-1">Book Now</button>
+                <button style={{ textAlign: "end",borderRadius:'20px',fontSize:'10px' }} className=" px-3">Book Now</button>
 
                 </div>
                 
@@ -84,7 +81,7 @@ const Flipcards = () => {
                   </p>
                 </div>
               </div>
-              <div class="card-back p-4 mt-2">
+              <div class="card-back rounded p-4 mt-2">
                 <div className="d-flex flex-column">
 
                 </div>
@@ -100,7 +97,7 @@ const Flipcards = () => {
                   eligendi,{" "}
                 </p>
                 <div className="d-flex justify-content-end">
-                <button style={{ textAlign: "end" }} className="rounded p-1">Book Now</button>
+                <button style={{ textAlign: "end",borderRadius:'20px',fontSize:'10px' }} className=" px-3">Book Now</button>
 
                 </div>
                 
@@ -134,7 +131,7 @@ const Flipcards = () => {
                   </p>
                 </div>
               </div>
-              <div class="card-back p-4 mt-2">
+              <div class="card-back  rounded p-4 mt-2">
                 <div className="d-flex flex-column">
 
                 </div>
@@ -150,7 +147,7 @@ const Flipcards = () => {
                   eligendi,{" "}
                 </p>
                 <div className="d-flex justify-content-end">
-                <button style={{ textAlign: "end" }} className="rounded p-1">Book Now</button>
+                <button style={{ textAlign: "end",borderRadius:'20px',fontSize:'10px' }} className=" px-3">Book Now</button>
 
                 </div>
                 
@@ -184,7 +181,7 @@ const Flipcards = () => {
                   </p>
                 </div>
               </div>
-              <div class="card-back p-4 mt-2">
+              <div class="card-back rounded p-4 mt-2">
                 <div className="d-flex flex-column">
 
                 </div>
@@ -200,7 +197,7 @@ const Flipcards = () => {
                   eligendi,{" "}
                 </p>
                 <div className="d-flex justify-content-end">
-                <button style={{ textAlign: "end" }} className="rounded p-1">Book Now</button>
+                <button style={{ textAlign: "end",borderRadius:'20px',fontSize:'10px' }} className=" px-3">Book Now</button>
 
                 </div>
                 

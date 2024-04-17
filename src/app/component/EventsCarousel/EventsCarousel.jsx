@@ -13,7 +13,7 @@ const EventsCarousel = () => {
             <div class="carousel-item active">
               <div
                 style={{
-                  backgroundImage: "url(/asserts/images/industry.png)",
+                  backgroundImage: "url(/asserts/images/dubai.png)",
                  
                 }}
               >
@@ -54,7 +54,7 @@ const EventsCarousel = () => {
                   </div>
                   <div
                     className="col-5 d-flex justify-content-center position-absolute"
-                    style={{ top: "8.3rem", right: "-7rem" }}
+                    style={{ top: "8.3rem", right: "-3rem" }}
                   >
                     <div className="position-absolute">
                       <div className="d-flex">

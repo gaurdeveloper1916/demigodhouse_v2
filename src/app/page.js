@@ -29,7 +29,7 @@ export default function Home() {
       <Globalevents />
       <Booknow />
       <MultiMarquee/>
-      <EventsCarousel/>
+      {/* <EventsCarousel/> */}
       {/* <Flipcards/> */}
 
       {/* <Domesticevets/> */}
