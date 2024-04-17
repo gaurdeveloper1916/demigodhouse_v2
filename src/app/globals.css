@@ -670,8 +670,14 @@ img.full_img {
 .background-image-event {
   width: 100%;
   height: 100%;
+  transition: opacity 0.5s ease-in-out;
+
 
 }
+.background-image-event .loaded {
+  opacity: 0.5; 
+}
+
 .event-name-h1{
   font-size: 56px;
 }
@@ -775,4 +781,7 @@ background: rgb(255, 68, 68) !important;
     font-weight: 600;
 
 }
+
+
+
 

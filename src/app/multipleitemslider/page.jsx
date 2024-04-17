@@ -99,7 +99,7 @@ const ImageGallery = () => {
         </p>
         <button className='book-now-event px-4'>Book Now</button>
       </div>
-        <img src={backgroundImage} alt="Background Image" className="background-image-event" />
+        <img src={backgroundImage} alt="Background Image" className="background-image-event " />
         <div className="thumbnails-event p-5">
           
           {thumbnails.map((image, index) => (
@@ -107,8 +107,9 @@ const ImageGallery = () => {
               key={index}
               src={image}
               alt={`Thumbnail ${index + 1}`}
-              className="thumbnail-event"
+              className="thumbnail-event img-fluid"
               onClick={() => changeBackground(image)}
+               
             />
           ))}
         </div>

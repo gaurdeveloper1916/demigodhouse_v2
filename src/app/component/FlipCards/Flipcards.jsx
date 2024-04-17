@@ -3,10 +3,10 @@ import "../FlipCards/flipcard.css";
 
 const Flipcards = () => {
   return (
-    <div>
-      <div className="row">
-        <div className="col-lg-3  bg-warning">
-          <div class="wrapper " ontouchstart="this.classList.toggle('hover');">
+    <div className="container-fluid">
+      <div className="d-flex gap-2"  >
+        <div className="col-lg-3 ">
+          <div class="wrapper w-100" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper ">
               <div
                 style={{
@@ -31,7 +31,7 @@ const Flipcards = () => {
                 </div>
                 
               </div>
-              <div class="card-back  rounded p-4 mt-2">
+              <div class="card-back w-100  rounded p-4 ">
                 <div className="d-flex flex-column">
 
                 </div>
@@ -39,7 +39,7 @@ const Flipcards = () => {
                   className="w-100 rounded"
                   src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
                 ></img>
-               <div className="mt-4">
+               <div className="mb-5">
                 <h5 style={{ textAlign: "start" }}>Event Name</h5>
                 <p style={{ textAlign: "start", fontSize: "12px" }}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
@@ -56,9 +56,8 @@ const Flipcards = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-3">
-          <div class="wrapper" ontouchstart="this.classList.toggle('hover');">
-          <div class="flipper">
+        <div class="wrapper w-100" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper ">
               <div
                 style={{
                   backgroundImage: `url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg)`,
@@ -80,8 +79,9 @@ const Flipcards = () => {
                     Tenetur explicabo deleniti repellendus{" "}
                   </p>
                 </div>
+                
               </div>
-              <div class="card-back rounded p-4 mt-2">
+              <div class="card-back w-100  rounded p-4 ">
                 <div className="d-flex flex-column">
 
                 </div>
@@ -89,7 +89,7 @@ const Flipcards = () => {
                   className="w-100 rounded"
                   src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
                 ></img>
-               <div className="mt-4">
+               <div className="mb-5">
                 <h5 style={{ textAlign: "start" }}>Event Name</h5>
                 <p style={{ textAlign: "start", fontSize: "12px" }}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
@@ -105,10 +105,8 @@ const Flipcards = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-lg-3">
-          <div class="wrapper" ontouchstart="this.classList.toggle('hover');">
-          <div class="flipper">
+          <div class="wrapper w-100" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper ">
               <div
                 style={{
                   backgroundImage: `url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg)`,
@@ -130,8 +128,9 @@ const Flipcards = () => {
                     Tenetur explicabo deleniti repellendus{" "}
                   </p>
                 </div>
+                
               </div>
-              <div class="card-back  rounded p-4 mt-2">
+              <div class="card-back w-100  rounded p-4 ">
                 <div className="d-flex flex-column">
 
                 </div>
@@ -139,7 +138,7 @@ const Flipcards = () => {
                   className="w-100 rounded"
                   src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
                 ></img>
-               <div className="mt-4">
+               <div className="mb-5">
                 <h5 style={{ textAlign: "start" }}>Event Name</h5>
                 <p style={{ textAlign: "start", fontSize: "12px" }}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
@@ -155,10 +154,8 @@ const Flipcards = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-lg-3">
-          <div class="wrapper" ontouchstart="this.classList.toggle('hover');">
-          <div class="flipper">
+          <div class="wrapper w-100" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper ">
               <div
                 style={{
                   backgroundImage: `url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg)`,
@@ -180,8 +177,9 @@ const Flipcards = () => {
                     Tenetur explicabo deleniti repellendus{" "}
                   </p>
                 </div>
+                
               </div>
-              <div class="card-back rounded p-4 mt-2">
+              <div class="card-back w-100  rounded p-4 ">
                 <div className="d-flex flex-column">
 
                 </div>
@@ -189,7 +187,7 @@ const Flipcards = () => {
                   className="w-100 rounded"
                   src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
                 ></img>
-               <div className="mt-4">
+               <div className="mb-5">
                 <h5 style={{ textAlign: "start" }}>Event Name</h5>
                 <p style={{ textAlign: "start", fontSize: "12px" }}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
@@ -205,7 +203,7 @@ const Flipcards = () => {
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
     </div>
   );
