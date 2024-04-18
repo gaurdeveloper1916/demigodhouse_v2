@@ -46,7 +46,13 @@ const ImageGallery = () => {
   useEffect(() => {
       setBackgroundImage(thumbnails[currentIndex]);
   }, [currentIndex, thumbnails]);
-
+  const images = [
+    'https://picsum.photos/id/237/200/200',
+    'https://picsum.photos/id/238/200/200',
+    'https://picsum.photos/id/239/200/200',
+    'https://picsum.photos/id/240/200/200',
+    'https://picsum.photos/id/241/200/200'
+  ];
   const changeBackground = (imageUrl) => {
       setBackgroundImage(imageUrl);
   };
@@ -83,6 +89,23 @@ const ImageGallery = () => {
           </div>
         </div>
       </div>
+
+      <div className="image-container">
+      {images.map((src, index) => (
+        <div key={index} className="image d-flex">
+          <img src={src} alt={`Image ${index + 1}`} width={200} height={200} />
+        </div>
+      ))}
+      {/* <style jsx>{`
+        .image {
+          margin: 10px;
+          transition: transform 0.2s ease-in-out;
+        }
+        .image:hover {
+          transform: scale(1.2);
+        }
+      `}</style> */}
+    </div>
       <Sliderr />
       <CarouselEvents />
       <GetTickets />
