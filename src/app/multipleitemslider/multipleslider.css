@@ -1,0 +1,20 @@
+/* styles.css or a CSS module */
+.background-image-event {
+    width: 100%; /* Adjust width as needed */
+    opacity: 0; /* Start invisible */
+    position: relative; /* Needed for positioning */
+    animation: slideInFromRight 1s forwards; /* Define animation */
+    animation-delay: 0.5s; /* Delay animation if needed */
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      right: -100%; /* Start from outside the right of the viewport */
+      opacity: 0;
+    }
+    to {
+      right: 0; /* End at its normal position */
+      opacity: 1;
+    }
+  }
+  

@@ -86,8 +86,8 @@
   /* Credit: http://davidwalsh.name/css-flip */
   /* entire container, keeps perspective */
   .wrapper, .card-front, .card-back {
-    width: 250px;
-    height: 345px;
+    width: 200px;
+    height: 400px;
   }
   .wrapper {
     margin: 1em auto;
@@ -108,7 +108,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px;
+    /* padding: 20px; */
     backface-visibility: hidden;
     text-align: center;
     box-sizing: border-box;
