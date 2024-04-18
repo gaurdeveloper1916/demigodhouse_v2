@@ -16,77 +16,77 @@ import Flipcards from "../component/FlipCards/Flipcards";
 import GetTickets from "./GetTickets";
 import CarouselEvents from "./slider";
 import '../multipleitemslider/multipleslider.css'
+import Test from "../component/Test.js/Test";
 
 const ImageGallery = () => {
   // const [backgroundImage, setBackgroundImage] = useState(
   //   "https://img.freepik.com/free-photo/vibrant-scene-with-dj-techno-party_23-2150551537.jpg?ga=GA1.1.1887626236.1712805731&"
   // );
-  const [backgroundImage, setBackgroundImage] = useState('https://img.freepik.com/free-photo/vibrant-scene-with-dj-techno-party_23-2150551537.jpg?ga=GA1.1.1887626236.1712805731&');
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [backgroundImage, setBackgroundImage] = useState('');
+  const [currentImage, setCurrentImage] = useState('');
+  const [isChanging, setIsChanging] = useState(false);
   const [thumbnails] = useState([
-      "https://img.freepik.com/free-photo/vibrant-scene-with-dj-techno-party_23-2150551537.jpg?ga=GA1.1.1887626236.1712805731&",
-      "https://img.freepik.com/premium-photo/clubbing-dj-lively-energetic-performance-with-electronic-dance-music_734790-6060.jpg?ga=GA1.1.1887626236.1712805731&",
-      "https://img.freepik.com/premium-photo/dynamic-image-dj-console-energizing-party-with-vibrant-beats_99096-4039.jpg?ga=GA1.1.1887626236.1712805731&",
-      "https://img.freepik.com/premium-photo/dj-with-headphones-night-club-party-blue-light-people-crowd-background_968517-142771.jpg?ga=GA1.1.1887626236.1712805731&",
+    "https://img.freepik.com/free-photo/vibrant-scene-with-dj-techno-party_23-2150551537.jpg?ga=GA1.1.1887626236.1712805731&",
+    "https://img.freepik.com/premium-photo/clubbing-dj-lively-energetic-performance-with-electronic-dance-music_734790-6060.jpg?ga=GA1.1.1887626236.1712805731&",
+    "https://img.freepik.com/premium-photo/dynamic-image-dj-console-energizing-party-with-vibrant-beats_99096-4039.jpg?ga=GA1.1.1887626236.1712805731&",
+    "https://img.freepik.com/premium-photo/dj-with-headphones-night-club-party-blue-light-people-crowd-background_968517-142771.jpg?ga=GA1.1.1887626236.1712805731&",
   ]);
 
   useEffect(() => {
-      // Set initial background image
-      setBackgroundImage(thumbnails[currentIndex]);
+    setBackgroundImage(thumbnails[0]);
+    setCurrentImage(thumbnails[0]);
+  }, [thumbnails]);
 
-      // Change the background image every 5 seconds
-      const interval = setInterval(() => {
-          setCurrentIndex(current => (current + 1) % thumbnails.length);
-      }, 1000);
-      // Cleanup interval on component unmount
-      return () => clearInterval(interval);
-  }, [thumbnails, currentIndex]);
-
-  // Update backgroundImage when currentIndex changes
   useEffect(() => {
-      setBackgroundImage(thumbnails[currentIndex]);
-  }, [currentIndex, thumbnails]);
+    const interval = setInterval(() => {
+      setIsChanging(true);
+      const nextIndex = (thumbnails.indexOf(currentImage) + 1) % thumbnails.length;
+      setCurrentImage(thumbnails[nextIndex]);
+    }, 3000);
 
-  const changeBackground = (imageUrl) => {
-      setBackgroundImage(imageUrl);
-  };
+    return () => clearInterval(interval);
+  }, [thumbnails, currentImage]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setBackgroundImage(currentImage);
+      setIsChanging(false);
+    }, 500); 
+
+    return () => clearTimeout(timer);
+  }, [currentImage]);
   return (
     <div className="bg-dark">
-      <div className="container-event-1  ">
-        <div className="image-container-event">
-          <div className="event-details col-lg-6 p-5">
-            <h1 className="event-name-h1">Event Name </h1>
-            <p>
-              electronic typesetting, remaining it It was popularised in the
-              1960s was popularised essentially unchanged. It was popularised in
-              the 1960s with the release of Letraset sheets containing Lorem
-              Ipsum passages, and more recently with desktop publishing software
-              like Aldus
-            </p>
-            <button className="book-now-event px-4">Book Now</button>
-          </div>
-          <img
-            src={backgroundImage}
-            alt="Background Image"
-            className="background-image-event"
-          />
-          <div className="thumbnails-event p-5 backgroundImageEvent">
-            {thumbnails.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Thumbnail ${index + 1}`}
-                className="thumbnail-event img-fluid "
-                // onClick={() => changeBackground(image)}
-              />
-            ))}
-          </div>
+     <div className="container-event-1">
+      <div className="image-container-event">
+        <div className="event-details col-lg-6 p-5">
+          <h1 className="event-name-h1">Event Name</h1>
+          <p>electronic typesetting, remaining it It was popularised in the 1960s was popularised essentially unchanged...</p>
+          <button className="book-now-event px-4">Book Now</button>
+        </div>
+        <img
+          src={backgroundImage}
+          alt="Background Image"
+          className={`background-image-event ${isChanging ? 'fading-out' : 'fading-in'}`}
+        />
+        <div className="thumbnails-event p-5 backgroundImageEvent">
+          {thumbnails.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Thumbnail ${index + 1}`}
+              className="thumbnail-event img-fluid"
+              onClick={() => setCurrentImage(image)}
+            />
+          ))}
         </div>
       </div>
+    </div>
       <Sliderr />
       <CarouselEvents />
       <GetTickets />
       <Flipcards />
+      <Test/>
       <EventsCarousel />
       {/* <div>
    (
