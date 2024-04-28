@@ -12,6 +12,7 @@ import Booknow from "./component/booknow/Booknow";
 import MultiMarquee from "./component/multimarquee/MultiMarquee";
 import EventsCarousel from "./component/EventsCarousel/EventsCarousel";
 import Flipcards from "./component/FlipCards/Flipcards";
+import Testtube from "./component/testtube/Testtube";
 
 export default function Home() {
   <Head>
@@ -28,9 +29,11 @@ export default function Home() {
       <Curveslider />
       <Globalevents />
       <Booknow />
-      <MultiMarquee/>
+      <Testtube/>
+
+      {/* <MultiMarquee/> */}
       {/* <EventsCarousel/> */}
-      {/* <Flipcards/> */}
+   
 
       {/* <Domesticevets/> */}
       {/* <Sliderr/> */}
