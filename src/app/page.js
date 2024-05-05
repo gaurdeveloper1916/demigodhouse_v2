@@ -13,6 +13,9 @@ import MultiMarquee from "./component/multimarquee/MultiMarquee";
 import EventsCarousel from "./component/EventsCarousel/EventsCarousel";
 import Flipcards from "./component/FlipCards/Flipcards";
 import Testtube from "./component/testtube/Testtube";
+import FridayNight from "./component/fridaynight/fridayNight";
+import DesSlider from "./component/descSlider/DesSlider";
+import VerticalSlider from "./component/verticalslider/VerticalSlider";
 
 export default function Home() {
   <Head>
@@ -22,15 +25,16 @@ export default function Home() {
   return (
     <main className="bg-dark-black">
       <Slider />
-      {/* <Events/> */}
       <Map />
       <Explore />
       <Membership />
       <Curveslider />
-      <Globalevents />
+      {/* <Globalevents /> */}
       <Booknow />
       <Testtube/>
-
+      <FridayNight/>
+      <DesSlider/>
+      <VerticalSlider/>
       {/* <MultiMarquee/> */}
       {/* <EventsCarousel/> */}
    

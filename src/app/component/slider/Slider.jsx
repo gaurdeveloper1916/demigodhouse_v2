@@ -67,29 +67,6 @@ const Slider = () => {
   return (
     <>
       <div className="container-fluid p-0">
-        {/* <div className="col-lg-12 d-flex justify-content-between">
-            <div>
-            <img
-              style={{ width: "190px", height: "94px" }}
-              src="./asserts/images/demigodnew.png"
-            ></img>
-            </div>
-            <div className="d-flex gap-3">
-                    <p>Adult</p>
-                    <p>Kids</p>
-                    <p>Trends</p>
-                    <p>My list</p>
-
-            </div>
-            <div>
-            <MDBCol md="6">
-      <MDBFormInline className="md-form">
-        <MDBIcon icon="search" />
-        <input className="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search" />
-      </MDBFormInline>
-    </MDBCol>
-            </div>
-            </div> */}
         <div
           className="d-flex justify-space-between flex-lg-row flex-column event-container"
           style={{

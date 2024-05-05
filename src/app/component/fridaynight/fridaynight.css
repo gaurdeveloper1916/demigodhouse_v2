@@ -1,0 +1,38 @@
+.image-container {
+    position: relative;
+}
+.slider-bar{
+    visibility: hidden;
+}
+
+.text-container,
+.buttons-container {
+    position: absolute;
+    visibility: hidden;
+
+    /* bottom: 0;
+    left: 50%; */
+    transform: translateX(-50%);
+    transition: visibility 0.3s ease;
+}
+
+
+.image-container:hover .buttons-container {
+    visibility: visible;
+    
+}
+
+.image-container:hover .slider-bar {
+    visibility: visible;
+}
+.text-fw {
+    font-size: 10px;
+  
+}
+
+.custom-border {
+    border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%
+}
+.ff-heading{
+    font-family: fantasy;
+}
