@@ -11,7 +11,6 @@ function Footer(props) {
     "Art Affairs",
     "Agro & Ecological Events",
     " Cultural Events",
-    " Defence & Surveillance Events",
     "Educational Events",
     " Exhibition",
     " Food Festivals",
@@ -41,11 +40,11 @@ function Footer(props) {
   ];
   return (
     <>
-      <div className="container-fluid  px-0">
+      <div className="container-fluid  p-0">
         <footer className="footer-cont text-center text-lg-start text-white">
-          <div className="container p-4">
-            <div className="d-flex justify-content-center align-items-center ">
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div className="container p-lg-4">
+            <div className="d-flex flex-column flex-lg-row ">
+              <div className="col-lg-3 col-12  ">
                 <div className="  d-flex a ">
                   <img
                     src="./asserts/images/demigodnew.png"
@@ -56,14 +55,12 @@ function Footer(props) {
                   />
                 </div>
               </div>
+            
+              <div className="col-lg-5 d-flex gap-2  ">
 
-              <div className="col-lg-5   mb-4 mb-md-0">
-                <h5 className="text-uppercase   text-web">
-                  Event Categories
-                </h5>
-                <div className="d-flex flex-lg-row  flex-column  gap-3">
-                  <div>
-                    <ul className="list-unstyled">
+                <div className="col-lg-6 ">
+           
+                    <ul className="list-unstyled text-start">
                       {eventCategory.slice(0, 8).map((item, i) => {
                         return (
                           <li className="mb-2">
@@ -79,9 +76,10 @@ function Footer(props) {
                         );
                       })}
                     </ul>
-                  </div>
-                  <div>
-                    <ul className="list-unstyled">
+              
+                </div>
+                <div className="col-lg-6 ">
+                    <ul className="list-unstyled text-start">
                       {eventCategory.slice(8, 15).map((item, i) => {
                         return (
                           <li className="mb-2">
@@ -95,11 +93,10 @@ function Footer(props) {
                         );
                       })}
                     </ul>
-                  </div>
                 </div>
               </div>
 
-              <div className="col-lg-2 col-md-6  mb-md-0">
+              <div className="col-lg-2  col-12  ">
                 <h5 className="text-uppercase text-web">Services</h5>
                 <ul className="list-unstyled">
                   {servicesList.map((item, i) => {
@@ -115,7 +112,7 @@ function Footer(props) {
                   })}
                 </ul>
               </div>
-              <div className="col-lg-2 col-md-6  mb-md-0">
+              <div className="col-lg-2   col-12 ">
                 <h5 className="text-web text-center   text-uppercase">
                   Connect With Us
                 </h5>
