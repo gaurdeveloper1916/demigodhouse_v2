@@ -45,7 +45,7 @@ const Flipcards = () => {
     // }
   ];  return (
     <div className="container-fluid">
-      <div className="d-flex gap-2"  >
+      <div className="d-flex gap-2 flex-lg-row flex-column"  >
        {
         sliderImageUrl.map((item)=>{
           return(

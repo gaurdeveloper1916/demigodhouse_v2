@@ -845,6 +845,26 @@ background: rgb(255, 68, 68) !important;
        background: #0E0E0F;
        overflow: hidden;
      }
+     .thumbnails-event {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+     left: -12%;
+    }
+    
+     .thumbnail-event {
+      width: 85px; 
+      height: 85px; 
+      cursor: pointer;
+      border-radius: 10px;
+      
+    }
+    
+    .cat-h1{
+      top: 45%;
+      left: -2rem;
+    }
+
 }
 .ff-heading{
   font-family: fantasy;

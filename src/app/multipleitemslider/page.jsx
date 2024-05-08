@@ -45,7 +45,7 @@ const ImageGallery = () => {
     const timer = setTimeout(() => {
       setBackgroundImage(currentImage);
       setIsChanging(false);
-    }, 500); 
+    }, 1500); 
 
     return () => clearTimeout(timer);
   }, [currentImage]);

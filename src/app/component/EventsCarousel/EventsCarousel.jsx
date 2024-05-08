@@ -17,7 +17,7 @@ const EventsCarousel = () => {
                  
                 }}
               >
-                <div className="col-lg-12 d-flex justify-content- ">
+                <div className="col-lg-12 d-flex flex-lg-row flex-column  ">
                   <div
                     className="col-5 mt-lg-5 mb-lg-5 p-5 text-black"
                     style={{ marginLeft: "10rem" }}
