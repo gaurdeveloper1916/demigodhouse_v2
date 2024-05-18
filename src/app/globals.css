@@ -211,7 +211,7 @@ button {
   width: 100%;
 }
 .event-container {
-  padding:'5rem'
+  padding:5rem;
 }
 .text-shadow-effect {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -836,6 +836,9 @@ background: rgb(255, 68, 68) !important;
 }
 /* mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .event-container {
+    padding:0rem
+  }
   .product {
        position: relative;
        width: auto;

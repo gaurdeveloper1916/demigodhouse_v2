@@ -39,12 +39,13 @@ background: linear-gradient(90deg, rgba(54,221,27,1) 0%, rgba(68,180,68,1) 0%, r
   .des{
     font-size: 14px;
   }
-  .short-img{
-    border-radius: 50%;
+  .short-img {
+    border-radius: 61%;
     cursor: pointer;
     margin-left: 10px;
-    
-  }
+    height: 43px;
+    width: 43px;
+}
   .icon-arrow{
     margin-left: 20px;
   }

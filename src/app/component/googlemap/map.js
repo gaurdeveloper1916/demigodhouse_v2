@@ -7,7 +7,7 @@ export default function Home() {
   });
 
   return (
-    <main id="map" style={{ width: '100%', height: '400px' }}>
+    <main id="map" style={{ width: '100%', height: '430px' }}>
         {/* <p className="fs-4 text-center text-shadow-effect mt-4">Visualize events geographically on a map.</p> */}
       <div id="map">
         <MapWithNoSSR />

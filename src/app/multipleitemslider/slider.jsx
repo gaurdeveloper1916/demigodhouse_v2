@@ -9,7 +9,7 @@ function CarouselEvents() {
     slidesToShow: 4,
     slidesToScroll: 3,
     pauseOnHover: true,
-    responsive: [
+   responsive : [
       {
         breakpoint: 1024,
         settings: {

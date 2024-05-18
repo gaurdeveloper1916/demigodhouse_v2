@@ -7,7 +7,7 @@ const Booknow = () => {
   return (
     <>
       <div
-        className="book_now_user"
+        className="book_now_user d-flex flex-lg-row flex-column"
         style={{
           display: "flex",
           background: `url(${
@@ -54,7 +54,7 @@ const Booknow = () => {
               perferendis perspiciatis in suscipit nobis, quasi tenetur nesciunt
               vitae totam iure.
             </p>
-            <button>Book Now</button>
+            <button className="btn">Book Now</button>
           </div>
         </div>
 
@@ -93,7 +93,7 @@ const Booknow = () => {
               perferendis perspiciatis in suscipit nobis, quasi tenetur nesciunt
               vitae totam iure.
             </p>
-            <button>Book Now</button>
+            <button className="btn ">Book Now</button>
           </div>
         </div>
 
@@ -134,7 +134,7 @@ const Booknow = () => {
               perferendis perspiciatis in suscipit nobis, quasi tenetur nesciunt
               vitae totam iure.
             </p>
-            <button>Book Now</button>
+            <button className="btn ">Book Now</button>
           </div>
         </div>
       </div>

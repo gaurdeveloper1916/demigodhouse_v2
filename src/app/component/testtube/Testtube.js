@@ -14,8 +14,8 @@ function Testtube(props) {
   ];
   return (
     <div style={{backgroundImage: "url(/asserts/images/canada.png)"}} className="container-fluid p-5">
-      <div  className="p-5">
-        <div  className="d-flex  align-items-center justify-content-center">
+      <div  className="p-lg-5 p-2">
+        <div  className="d-flex flex-lg-row flex-column  align-items-center justify-content-center">
           {/* <div className="col-lg-6">
             <div className="d-flex gap-2  align-items-center">
               {multipleTestTube.map((item) => {

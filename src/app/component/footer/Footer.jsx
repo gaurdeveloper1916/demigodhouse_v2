@@ -41,11 +41,13 @@ function Footer(props) {
   return (
     <>
       <div className="container-fluid  p-0">
-        <footer className="footer-cont text-center text-lg-start text-white">
+        <footer className="footer-cont d-flex text-lg-start text-white ">
           <div className="container p-lg-4">
-            <div className="d-flex flex-column flex-lg-row ">
-              <div className="col-lg-3 col-12  ">
-                <div className="  d-flex a ">
+            <div className="d-flex flex-column justify-content-center   flex-lg-row ">
+              <div className="d-flex justify-content-center align-items-center">
+
+             
+              <div className="col-lg-12 col-7 text-center  ">
                   <img
                     src="./asserts/images/demigodnew.png"
                     //  style={{ width: "300px", height: "94px" }}
@@ -53,7 +55,8 @@ function Footer(props) {
                     alt=""
                     loading="lazy"
                   />
-                </div>
+                
+              </div>
               </div>
             
               <div className="col-lg-5 d-flex gap-2  ">

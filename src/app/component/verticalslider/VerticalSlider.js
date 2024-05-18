@@ -40,7 +40,7 @@ function VerticalSlider(props) {
   ];
   return (
     <div className="container-fluid ">
-      <div className="row bg p-5">
+      <div className="row bg p-lg-5 p-3">
         <div className="col-lg-6 d-flex justify-content-center mt-5">
           <div className="col-lg-10 d-flex justify-content-center allign-items-center  ">
             <div className="d-flex flex-column ">
@@ -53,11 +53,11 @@ function VerticalSlider(props) {
                 and scrambled it to make a type specimen book. It has survived
                 not only five centuries
               </p>
-              <button className="book-now-btn col-lg-4 fw-bold"> Buy Now</button>
+              <button className="book-now-btn col-lg-4 col-7 fw-bold"> Buy Now</button>
             </div>
           </div>
         </div>
-        <div className="col-lg-6 d-flex mt-5">
+        <div className="col-lg-6 d-flex flex-lg-row flex-column mt-5">
           <div className="col-lg-10 gap-4 d-flex justify-content-center allign-items-center  ">
             <div>
               <img
@@ -67,7 +67,7 @@ function VerticalSlider(props) {
               ></img>
             </div>
           </div>
-          <div className="col-lg-1 d-flex flex-column justify-content-center allign-items-center gap-2">
+          <div className="col-lg-1 d-flex flex-lg-column flex-row justify-content-center allign-items-center gap-2 mt-lg-0 mt-3">
             <FaAngleUp className="icon-arrow cursor" size={15} color="white" />
             {initialImages.map((item) => {
               return (

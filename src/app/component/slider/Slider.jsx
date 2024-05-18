@@ -74,7 +74,6 @@ const Slider = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            padding: "5rem",
             transition: "background-image 0.5s ease-in-out",
           }}
         >

@@ -37,7 +37,7 @@ const Curveslider = () => {
       {swiperRef === null ? (
         <p>Loading....</p>
       ) : (
-        <div className="swiper">
+        <div className="swiper mt-lg-4 mt-3 mb-lg-5 mb-2">
           <div className="swiper-button-prev"></div>
           <div className="swiper-button-next"></div>
           <div className="swiper-wrapper">
