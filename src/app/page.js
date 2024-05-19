@@ -28,7 +28,7 @@ export default function Home() {
       <Map />
       <Explore />
       <Membership />
-      <Curveslider />
+      {/* <Curveslider /> */}
       {/* <Globalevents /> */}
       <Booknow />
       <Testtube/>

@@ -42,7 +42,7 @@ const Slider = () => {
     useEffect(() => {
       const interval = setInterval(() => {
         moveItems();
-      }, 5000);
+      }, 6000);
 
       return () => clearInterval(interval);
     }, [currentIndex]);
@@ -91,10 +91,10 @@ const Slider = () => {
               aut nostrum enim?
             </p>
             <div className="d-flex gap-3">
-              <button className="text-white bg-warning rounded border-none px-4" type="button ">
+              <button className="button-all px-4 py-2 bg-warning text-black" type="button ">
                 Watch
               </button>
-              <button className="text-white bg-black rounded border-none px-4" type="button ">
+              <button className="button-all px-4 py-2 bg-warning text-black" type="button ">
                 My List
               </button>
             </div>

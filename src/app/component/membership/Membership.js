@@ -142,7 +142,7 @@ function Membership(props) {
         </div>
         <div className="col-lg-6 p-3 d-flex align-items-center justify-content-center">
           <img
-            className="w-100  p-5 img-membership"
+            className="w-100 img-membership"
             src="https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?cs=srgb&dl=pexels-teddy-yang-2263436.jpg&fm=jpg"
           ></img>
         </div>

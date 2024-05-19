@@ -1,0 +1,50 @@
+/* components/EventCard.module.css */
+.eventCard {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendywei-1190298.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease;
+  width: 100%;
+  height: 100vh
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .eventCard:hover .overlay {
+    opacity: 1;
+  }
+  .eventNameTxt{
+    font-size: 34px;
+    font-family: fantasy;
+  }
+  .eventName{
+    font-size: 23px;
+    font-family: fantasy;
+
+  }
+
+  
+  .textContainer {
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 100px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+  

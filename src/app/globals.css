@@ -2,6 +2,18 @@
 cursor-pointer{
   cursor: pointer;
 }
+.button-all{
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it inline block */
+  font-size: 13px; /* Font size */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50px; /* Circular button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
 .item-test {
   color: white;
 }
@@ -793,10 +805,6 @@ background: rgb(255, 68, 68) !important;
     font-weight: 600;
 
 }
-
-
-
-
 /* ravi */
 .cursor{
   cursor: pointer;

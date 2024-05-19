@@ -11,6 +11,8 @@ import GetTickets from "./GetTickets";
 import CarouselEvents from "./slider";
 import '../multipleitemslider/multipleslider.css'
 import Test from "../component/Test.js/Test";
+import Hoverevents from "../component/hoverEvent/Hoverevent";
+import Increasewidth from "../component/increaseWidth/Increasewidth";
 
 const ImageGallery = () => {
   // const [backgroundImage, setBackgroundImage] = useState(
@@ -80,8 +82,10 @@ const ImageGallery = () => {
       <CarouselEvents />
       <GetTickets />
       <Flipcards />
-      <Test/>
-      <EventsCarousel />
+      {/* <Test/> */}
+      {/* <EventsCarousel /> */}
+      <Hoverevents/>
+      <Increasewidth/>
       {/* <div>
    (
     <div className="parent p-5">

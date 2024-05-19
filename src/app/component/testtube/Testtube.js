@@ -5,15 +5,15 @@ import { IoIosArrowBack } from "react-icons/io";
 
 function Testtube(props) {
   const multipleTestTube = [
-    "210px",
-    "300px",
-    "400px",
-    "230px",
-    "300px",
-    "200px",
+    "260px",
+    "360px",
+    "460px",
+    "290px",
+    "350px",
+    "250px",
   ];
   return (
-    <div style={{backgroundImage: "url(/asserts/images/canada.png)"}} className="container-fluid p-5">
+    <div style={{backgroundImage: "url(https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendywei-1190298.jpg&fm=jpg)"}} className="container-fluid p-5">
       <div  className="p-lg-5 p-2">
         <div  className="d-flex flex-lg-row flex-column  align-items-center justify-content-center">
           {/* <div className="col-lg-6">
@@ -45,8 +45,8 @@ function Testtube(props) {
 
           <div className="col-lg-6">
             <div className="d-flex flex-column  justify-conten-center">
-              <h2 className="text-black">Event Name</h2>
-              <p className="text-black fw-bold">
+              <h2 className="text-white">Event Name</h2>
+              <p className="text-white fw-bold">
                 Contrary to popular belief, Lorem Ipsum is not simply random
                 text. It has roots piece of classical Latin literature from 45
                 BC, making it over 2000 years old. Richard McClintock, a Latin
