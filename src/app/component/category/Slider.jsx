@@ -1,10 +1,7 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
-
 const Sliderr = () => {
   const [active, setActive] = useState(null);
-
   const handleSlideClick = (index) => {
     setActive(index);
   };
@@ -39,36 +36,35 @@ const Sliderr = () => {
       name: "Image 6",
       desc: "Description for Image 6",
     },
+    {
+      img: "https://img.freepik.com/free-photo/medium-shot-kid-cheating-school-test_23-2150104930.jpg?size=626&ext=jpg",
+      name: "Image 1",
+      desc: "Description for Image 1",
+    },
+    
   ];
   return (
-
-          <div className="min-h-screen mt-3 ">
-            <div className="">
-              <div className="slider__inner ">
-              
-                {initialImages.map((item,index) => {
-                  return (
-                    <>
-                      <div
-                        key={index}
-                        className={`slide  ${active === index ? "active" : ""}`}
-                        onClick={() => handleSlideClick(index)}
-                      >
-                        <img
-                          className=""
-                          src={item.img}
-                          alt=""
-                        />
-                        <h1 className="cat-h1">{item.name}</h1>
-                        <div className="desc">{/* <h2>User Name</h2> */}</div>
-                      </div>
-                    </>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-       
+    <div className="min-h-screen mt-3 ">
+      <div className="">
+        <div className="slider__inner d-flex p-3">
+          {initialImages.map((item, index) => {
+            return (
+              <>
+                <div
+                  key={index}
+                  className={`slide ${active === index ? "active" : ""}`}
+                  onClick={() => handleSlideClick(index)}
+                >
+                  <img className="" src={item.img} alt="" />
+                  <h1 className="cat-h1">{item.name}</h1>
+                  <div className="desc">{/* <h2>User Name</h2> */}</div>
+                </div>
+              </>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
 };
 

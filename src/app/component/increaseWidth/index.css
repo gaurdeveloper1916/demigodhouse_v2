@@ -1,0 +1,22 @@
+.custom-img-width {
+  width: 170px;
+  height: 200px;
+  transition: transform 0.5s ease-in; 
+  transform-origin: left; 
+  position: relative;
+}
+.custom-img-width:hover {
+  transform: scaleX(1.8); 
+  width: 400px;
+}
+.custom-img-wrapper {
+  overflow: hidden; 
+  height: 100%;
+}
+.text-container{
+  position: absolute;
+  display: none;
+}
+.text-container:hover {
+ display: block;
+}

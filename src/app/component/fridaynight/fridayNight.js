@@ -98,7 +98,7 @@ function FridayNight() {
                   </div>
                   <div
                     style={{ backgroundColor: "lightgreen" }}
-                    className="col-lg-6 py-2 fw-bold d-flex cursor justify-content-center align-items-center"
+                    className="col-lg-6 py-2 fw-bold d-flex cursor bg-white justify-content-center align-items-center"
                   >
                     GET TICKETS
                   </div>

@@ -37,12 +37,12 @@ function GetTickets(props) {
               </p>
             </div>
             <div className="d-flex justify-content-center align-items-center">
-              <button className="bg-dark text-white px-5 get-tickets" type="button">
+              <button className="button-all bg-warning fw-bold text-black px-4 py-2" type="button">
                 GET TICKETS
               </button>
             </div>
           </div>
-        </div>
+        </div> py-2
       </div>
     </div>
     </>

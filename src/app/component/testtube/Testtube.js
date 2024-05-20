@@ -5,12 +5,12 @@ import { IoIosArrowBack } from "react-icons/io";
 
 function Testtube(props) {
   const multipleTestTube = [
-    "260px",
-    "360px",
-    "460px",
-    "290px",
-    "350px",
-    "250px",
+    "400px",
+    "700px",
+    "600px",
+    "660px",
+    "790px",
+    "590px",
   ];
   return (
     <div style={{backgroundImage: "url(https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendywei-1190298.jpg&fm=jpg)"}} className="container-fluid p-5">

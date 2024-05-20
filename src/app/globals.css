@@ -14,6 +14,9 @@ cursor-pointer{
   border-radius: 50px; /* Circular button */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
+.button-all:hover {
+  transform: translateY(-5px); /* Move button up slightly on hover */
+}
 .item-test {
   color: white;
 }
@@ -258,7 +261,7 @@ button {
   display: flex;
   gap: 1rem;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .slide img {
   width: 100%;
@@ -714,7 +717,7 @@ img.full_img {
 }
 
 .thumbnail-event {
-  width: 160px; /* adjust width as needed */
+  width: 190px; /* adjust width as needed */
   height: 170px; /* adjust height as needed */
   margin-left: 5px; /* adjust spacing as needed */
   cursor: pointer;

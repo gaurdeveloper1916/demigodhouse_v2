@@ -15,9 +15,7 @@ import Hoverevents from "../component/hoverEvent/Hoverevent";
 import Increasewidth from "../component/increaseWidth/Increasewidth";
 
 const ImageGallery = () => {
-  // const [backgroundImage, setBackgroundImage] = useState(
-  //   "https://img.freepik.com/free-photo/vibrant-scene-with-dj-techno-party_23-2150551537.jpg?ga=GA1.1.1887626236.1712805731&"
-  // );
+ 
   const [backgroundImage, setBackgroundImage] = useState('');
   const [currentImage, setCurrentImage] = useState('');
   const [isChanging, setIsChanging] = useState(false);
@@ -57,8 +55,8 @@ const ImageGallery = () => {
       <div className="image-container-event">
         <div className="event-details col-lg-6 p-5">
           <h1 className="event-name-h1">Event Name</h1>
-          <p>electronic typesetting, remaining it It was popularised in the 1960s was popularised essentially unchanged...</p>
-          <button className="book-now-event px-4">Book Now</button>
+          <p>Electronic typesetting, remaining it It was popularised in the 1960s was popularised essentially unchanged...</p>
+          <button className="button-all px-4 py-2 text-black bg-warning">Book Now</button>
         </div>
         <img
           src={backgroundImage}

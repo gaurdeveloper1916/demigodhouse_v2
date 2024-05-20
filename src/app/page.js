@@ -34,7 +34,7 @@ export default function Home() {
       <Testtube/>
       <FridayNight/>
       <DesSlider/>
-      <VerticalSlider/>
+      {/* <VerticalSlider/> */}
       {/* <MultiMarquee/> */}
       {/* <EventsCarousel/> */}
    

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./EventCard.module.css";
-
 const Hoverevents = () => {
   return (
     <div className="container-fluid ">
