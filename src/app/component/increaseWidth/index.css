@@ -7,7 +7,7 @@
 }
 .custom-img-width:hover {
   transform: scaleX(1.8); 
-  width: 400px;
+  width: 300px;
 }
 .custom-img-wrapper {
   overflow: hidden; 
@@ -15,7 +15,15 @@
 }
 .text-container{
   position: absolute;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  /* top: 0; */
+  bottom: 0;
+ left: 0;
+ background-color: antiquewhite;
 }
 .text-container:hover {
  display: block;

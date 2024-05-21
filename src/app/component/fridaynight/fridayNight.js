@@ -75,7 +75,8 @@ function FridayNight() {
   ];
 
   return (
-    <div className="slider-container p-lg-5 p-4 ">
+    <div className="container mt-5">
+      <div className="slider-container ">
       <Slider {...settings}>
         {initialImages.map((item) => {
           return (
@@ -129,6 +130,7 @@ function FridayNight() {
           );
         })}
       </Slider>
+    </div>
     </div>
   );
 }

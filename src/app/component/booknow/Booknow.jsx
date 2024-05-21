@@ -6,7 +6,8 @@ const Booknow = () => {
   const [currentSlide, setCurrentSlide] = useState("standup");
   return (
     <>
-      <div
+     <div className="container">
+     <div
         className="book_now_user d-flex flex-lg-row flex-column"
         style={{
           display: "flex",
@@ -138,6 +139,7 @@ const Booknow = () => {
           </div>
         </div>
       </div>
+     </div>
     </>
   );
 };

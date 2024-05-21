@@ -60,7 +60,8 @@ function DesSlider() {
   ];
 
   return (
-    <div
+    <div className="container mt-5"> 
+      <div
       style={{
         backgroundImage:
           "url(https://images.unsplash.com/photo-1562563436-a73bab993173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
@@ -96,6 +97,7 @@ function DesSlider() {
           );
         })}
       </Slider>
+    </div>
     </div>
   );
 }

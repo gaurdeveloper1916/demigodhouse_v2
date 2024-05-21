@@ -66,7 +66,7 @@ const Slider = () => {
 
   return (
     <>
-      <div className="container-fluid p-0">
+      <div className="container ">
         <div
           className="d-flex justify-space-between flex-lg-row flex-column event-container"
           style={{

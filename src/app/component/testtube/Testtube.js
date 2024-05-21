@@ -5,15 +5,16 @@ import { IoIosArrowBack } from "react-icons/io";
 
 function Testtube(props) {
   const multipleTestTube = [
+    "200px",
+    "500px",
     "400px",
-    "700px",
-    "600px",
-    "660px",
-    "790px",
+    "460px",
     "590px",
+    "390px",
   ];
   return (
-    <div style={{backgroundImage: "url(https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendywei-1190298.jpg&fm=jpg)"}} className="container-fluid p-5">
+  <div className="container mt-5"> 
+      <div style={{backgroundImage: "url(https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendywei-1190298.jpg&fm=jpg)"}} className="container-fluid p-5">
       <div  className="p-lg-5 p-2">
         <div  className="d-flex flex-lg-row flex-column  align-items-center justify-content-center">
           {/* <div className="col-lg-6">
@@ -65,6 +66,7 @@ function Testtube(props) {
         </div>
       </div>
     </div>
+  </div>
   );
 }
 
