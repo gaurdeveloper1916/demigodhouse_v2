@@ -13,6 +13,7 @@ import '../multipleitemslider/multipleslider.css'
 import Test from "../component/Test.js/Test";
 import Hoverevents from "../component/hoverEvent/Hoverevent";
 import Increasewidth from "../component/increaseWidth/Increasewidth";
+import Particular from "../component/particular/Particular";
 
 const ImageGallery = () => {
  
@@ -84,6 +85,7 @@ const ImageGallery = () => {
       {/* <EventsCarousel /> */}
       <Hoverevents/>
       <Increasewidth/>
+      <Particular/>
       {/* <div>
    (
     <div className="parent p-5">

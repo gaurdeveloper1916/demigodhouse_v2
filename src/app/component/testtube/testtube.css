@@ -18,3 +18,10 @@
     border-radius: 50%;
     padding: 7px;
 }
+.evnt-txt-heading{
+    font-family: fantasy;
+    letter-spacing: 1px;
+}
+.evnt-txt-des{
+    transition: transform 0.5s ease-in; 
+}
