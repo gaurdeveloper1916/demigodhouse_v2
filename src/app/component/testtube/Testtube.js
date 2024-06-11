@@ -34,8 +34,9 @@ function Testtube() {
   const [intialState, setIntialState] = useState(tubeData[0]);
 
   return (
-    <div className="container mt-5">
-      {/* <div
+    <>
+      <div className="container mt-5">
+        {/* <div
         style={{
           backgroundImage:
             "url(https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendywei-1190298.jpg&fm=jpg)",
@@ -91,35 +92,35 @@ function Testtube() {
           </div>
         </div>
       </div> */}
-      <div>
-        <div className=" d-flex gap-2 m-0 justify-content-center align-items-center ">
-         <div className=" d-flex col-lg-8 gap-3">
-         <h1 className="text-white fw-bold">EVENT</h1>
-          <p className="text-white  m-0 w-100 mt-2 event-name">
-            {" "}
-            <hr  className=""/>
-            <p>(THE STORY)</p>
+        <div>
+          <div className=" d-flex gap-2 m-0 justify-content-center align-items-center ">
+            <div className=" d-flex col-lg-9 gap-3">
+              <h1 className="text-white fw-bold">EVENT</h1>
+              <p className="text-white  m-0 w-100 mt-2 event-name">
+                {" "}
+                <hr className="" />
+                <p>(THE STORY)</p>
 
-          </p>{" "} 
-         </div>
-       
-        </div>
-        <div className=" d-flex gap- justify-content-center align-items-center ">
-         <div className=" d-flex col-lg-7 gap-3">
-         <h1  className="text-warning fw-bold">NAME</h1>
-      
-         </div>
-       
-        </div>
-      </div>
-      <div className="d-flex justify-content-center align-items-center">
-      <div className="col-lg-10  d-flex flex-lg-row flex-column   justify-content-center">
+              </p>{" "}
+            </div>
 
-        <div className="col-lg-4">
+          </div>
+          <div className=" d-flex gap- justify-content-center align-items-center ">
+            <div className=" d-flex col-lg-8 gap-3">
+              <h1 className="text-warning fw-bold">NAME</h1>
+
+            </div>
+
+          </div>
+        </div>
+        <div className="d-flex justify-content-center align-items-center">
+          <div className="col-lg-12  d-flex flex-lg-row flex-column   justify-content-center">
+
+            <div className="col-lg-4">
               <div className="d-flex gap-2 justify-content-center align-items-center">
                 {multipleTestTube.map((item) => {
                   return (
-                    <div style={{ position: "relative", height: `${item-150}px` }}>
+                    <div style={{ position: "relative", height: `${item - 150}px` }}>
                       <video autoPlay loop muted className="tube-bg-video">
                         <source
                           src="./asserts/images/testing.mp4"
@@ -139,17 +140,17 @@ function Testtube() {
               <div className="d-flex flex-column  ">
                 {/* <h2 className="text-white evnt-txt-heading">{intialState.evtName}</h2> */}
                 <p className="text-white evnt-txt-des ">
-                 {intialState.evtDes}
+                  {intialState.evtDes}
                 </p>
-               <div className="d-flex gap-1 justify-content-center align-items-center">
-               <div className="col-lg-8 d-flex py-5">
-               <button className="know-more-button px-4 py-1 fw-bold">Know More <GiStarShuriken />
-</button>
-               <button className="know-more-arrow"><IoIosArrowRoundForward />
-</button>
-               </div>
-               </div>
-                
+                <div className="d-flex gap-1 justify-content-center align-items-center">
+                  <div className="col-lg-8 d-flex py-5">
+                    <button className="know-more-button px-4 py-1 fw-bold">Know More <GiStarShuriken />
+                    </button>
+                    <button className="know-more-arrow"><IoIosArrowRoundForward />
+                    </button>
+                  </div>
+                </div>
+
                 {/* <div className="d-flex gap-5 cursor mt-5  justify-content-center align-items-center">
                   <IoIosArrowBack
                   onClick={()=>{setIntialState(tubeData[1])}}
@@ -167,11 +168,19 @@ function Testtube() {
                 </div> */}
               </div>
             </div>
-</div>
+          </div>
+        </div>
+
+
+
+
+
       </div>
       
-            
-    </div>
+    
+    </>
+   
+    
   );
 }
 
