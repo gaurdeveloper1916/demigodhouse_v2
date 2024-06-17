@@ -7,6 +7,20 @@
     display: block;
     transition: opacity 0.3s ease;
 }
+.btn-custom{
+    background-color: black;
+    border: 1px solid white;
+    font-size: 10px;
+}
+.image-container:hover .btn-custom {
+    background-color: transparent;
+    border: none;
+}
+.image-container:hover {
+transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 5s;}
 
 .image-container .overlay {
     display: none;
@@ -26,6 +40,7 @@
     z-index: 1;
     opacity: 0;
     transition: opacity 0.5s ease 0.5s;
+    border-radius: 10px;
 }
 
 .image-container:hover .overlay {

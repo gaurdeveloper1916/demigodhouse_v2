@@ -16,6 +16,7 @@ import Testtube from "./component/testtube/Testtube";
 import FridayNight from "./component/fridaynight/fridayNight";
 import DesSlider from "./component/descSlider/DesSlider";
 import VerticalSlider from "./component/verticalslider/VerticalSlider";
+import Test from "./component/Test.js/Test";
 
 export default function Home() {
   <Head>
@@ -33,6 +34,7 @@ export default function Home() {
       <Booknow />
       <Testtube/>
       <FridayNight/>
+      <Test/>
       <DesSlider/>
       {/* <VerticalSlider/> */}
       {/* <MultiMarquee/> */}

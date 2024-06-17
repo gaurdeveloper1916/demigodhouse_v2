@@ -88,7 +88,7 @@ function FridayNight() {
                     alt="Your Image"
                   ></img>
                   <div className="overlay">
-                    <h1 style={{marginTop:"40px",fontFamily:'fantasy'}} className="">SAN</h1>
+                    <h1 className="text-san">SAN</h1>
                   </div>
                   <div className="p-3 text-white visible-on-hover">
                     <h6 className="m-0">Chiesa San Biagio</h6>
@@ -96,7 +96,7 @@ function FridayNight() {
                     <p className="text-secondary">22.06.24 18:00</p>
                     <h6 className="m-0">Peter Whelan</h6>
                     <p className="text-secondary">Direttore</p>
-                    <button className="rounded-pill fs-6 border bg-black text-white">Acquis biGE</button>
+                    <button className="rounded-pill  btn-custom  px-4 py-2  text-white">Acquis biGE</button>
                   </div>
                 </div>
 
