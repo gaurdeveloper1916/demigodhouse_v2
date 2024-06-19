@@ -2,6 +2,12 @@
 cursor-pointer{
   cursor: pointer;
 }
+.smallfont{
+  font-size: 13px;
+}
+.mediumfont{
+  font-size: 16px;
+}
 .button-all{
   border: none; /* Remove borders */
   color: white; /* White text */
@@ -842,13 +848,19 @@ background: rgb(255, 68, 68) !important;
   width: 100%;
   height: 100%;
   bottom:-88%;
-  background: #ffffffcc;
-  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
   transition: 0.5s;
   border: 0;
 }
+.fontdiv{
+  top: 1rem;
+}
 .product:hover .specifies {
   bottom: 0;
+}
+.product:hover .fontdiv {
+  top: 15rem;
 }
 /* mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

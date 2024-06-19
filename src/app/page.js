@@ -17,6 +17,7 @@ import FridayNight from "./component/fridaynight/fridayNight";
 import DesSlider from "./component/descSlider/DesSlider";
 import VerticalSlider from "./component/verticalslider/VerticalSlider";
 import Test from "./component/Test.js/Test";
+import AnimatedImage from "./component/animatedImage/AnimatedImage";
 
 export default function Home() {
   <Head>
@@ -36,6 +37,7 @@ export default function Home() {
       <FridayNight/>
       <Test/>
       <DesSlider/>
+      <AnimatedImage/>
       {/* <VerticalSlider/> */}
       {/* <MultiMarquee/> */}
       {/* <EventsCarousel/> */}
