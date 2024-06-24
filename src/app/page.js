@@ -28,16 +28,23 @@ export default function Home() {
   return (
     <main className="bg-dark-black">
       <Slider />
-      <Map />
-      <Explore />
+      <TwoImagesDiv/>
+      <Test/>
       <Membership />
-      {/* <Curveslider /> */}
-      {/* <Globalevents /> */}
       <Booknow />
+      <Explore />
       <Testtube/>
       <FridayNight/>
-      <Test/>
-      <TwoImagesDiv/>
+   
+
+      <Map />
+    
+   
+      {/* <Curveslider /> */}
+      {/* <Globalevents /> */}
+     
+ 
+      
       {/* <DesSlider/> */}
       {/* <AnimatedImage/> */}
       {/* <VerticalSlider/> */}

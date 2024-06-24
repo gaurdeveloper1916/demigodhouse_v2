@@ -3,9 +3,9 @@ import { MdArrowOutward } from 'react-icons/md';
 
 function TwoImagesDiv(props) {
     return (
-        <div className='container p-0'>
-            <div className='d-flex gap-3'>
-                <div className='col-lg-8 '>
+        <div className='container p-0 mb-5'>
+            <div className='d-flex gap-3 mt-5'>
+                <div className='col-lg-8 mt-5 '>
                     <h1 className='text-center text-white mb-5 mt-2'>SELECTED WORK</h1>
                     <img className='img-fluid w-100 ' src='/asserts/images/bigImage.jpg'></img>
                     {/* <hr className='text-white hrClass' /> */}
