@@ -18,6 +18,7 @@ import DesSlider from "./component/descSlider/DesSlider";
 import VerticalSlider from "./component/verticalslider/VerticalSlider";
 import Test from "./component/Test.js/Test";
 import AnimatedImage from "./component/animatedImage/AnimatedImage";
+import TwoImagesDiv from "./component/twoImagesDiv/TwoImagesDiv";
 
 export default function Home() {
   <Head>
@@ -36,8 +37,9 @@ export default function Home() {
       <Testtube/>
       <FridayNight/>
       <Test/>
-      <DesSlider/>
-      <AnimatedImage/>
+      <TwoImagesDiv/>
+      {/* <DesSlider/> */}
+      {/* <AnimatedImage/> */}
       {/* <VerticalSlider/> */}
       {/* <MultiMarquee/> */}
       {/* <EventsCarousel/> */}

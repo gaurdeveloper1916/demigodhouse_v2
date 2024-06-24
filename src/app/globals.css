@@ -2,8 +2,15 @@
 cursor-pointer{
   cursor: pointer;
 }
+.hrClass{
+  /* margin: 0 !important; */
+  opacity: 1 !important;
+}
 .smallfont{
   font-size: 13px;
+}
+.verySmallFont{
+      font-size: 12px;
 }
 .mediumfont{
   font-size: 16px;
@@ -861,6 +868,11 @@ background: rgb(255, 68, 68) !important;
 }
 .product:hover .fontdiv {
   top: 15rem;
+}
+.row-reverse{
+      display: flex;
+        flex-direction: row-reverse;
+      
 }
 /* mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
