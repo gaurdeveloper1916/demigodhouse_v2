@@ -900,7 +900,7 @@ function Navbar() {
   return (
     <>
       <div className='container-fluid p-0 d-lg-block d-none '>
-        <div className='col-12  d-flex px-5 position-relative'>
+        <div  className='col-12  d-flex px-5 position-relative '>
           <div className='d-flex col-lg-9 '>
             <div className='d-flex gap-5'>
               <img className='logoImage' src='./asserts/images/demigodnew.png'></img>
@@ -953,7 +953,7 @@ function Navbar() {
           </div>
           <div className='col-lg-3 d-flex justify-content-center align-items-center gap-4 mb-3'>
             <p className='pt-3'>(+91)91 2988 8502</p>
-            <button style={{ fontSize: '16px' }} className='rounded-pill px-3 py-2 border-0 text-white bg-danger '>Quick Enquiry</button>
+            <button style={{ fontSize: '16px' }} className='rounded-pill px-3 py-2 border-0 text-white button-bg '>Quick Enquiry</button>
           </div>
         </div>
         {/* <div className='d-flex border-top  justify-content-center align-items-center subHeader'>
@@ -967,7 +967,7 @@ function Navbar() {
       </div>
       <div className='container-fluid p-0 d-lg-none d-block p-2'>
         <div className='d-flex justify-content-between'>
-          <img className='w-25' src='/img/logo.png'></img>
+          <img className='w-25' src='./asserts/images/demigodnew.png'></img>
           {/* <RxHamburgerMenu className='mt-2 ' size={35} /> */}
           <OffCanvasExample placement='end' name='end' data={data} />
 
