@@ -152,7 +152,7 @@ function OffCanvasExample() {
     {
       "id": 2,
       "attributes": {
-        "URLText": "Weeding",
+        "URLText": "Wedding",
         "url": "#",
         "createdAt": "2024-06-04T09:40:16.115Z",
         "updatedAt": "2024-06-04T09:40:17.431Z",
@@ -900,7 +900,7 @@ function Navbar() {
   return (
     <>
       <div className='container-fluid p-0 d-lg-block d-none '>
-        <div  className='col-12  d-flex px-5 position-relative '>
+        <div className='col-12  d-flex px-5 position-relative bg-black'>
           <div className='d-flex col-lg-9 '>
             <div className='d-flex gap-5'>
               <img className='logoImage' src='./asserts/images/demigodnew.png'></img>
@@ -916,11 +916,11 @@ function Navbar() {
                             <div>
                               <ul className='ul-custom custom-sub-opacity hover mb-0'>
                                 <li className=' linehight fs-6'>
-                                  <p className='list-text fs-6'> {item.attributes.URLText}</p>
+                                  <p className='list-text fs-6 text-white'> {item.attributes.URLText}</p>
                                   <div style={{ left: "0%", top: '6.5rem', zIndex: '1' }} className='custom-opacity w-100  bg-white d-flex border-top position-absolute  align-items-center '>
-                                    <div className='d-flex'>
-                                      <div className='col-lg-6 '></div>
-                                      <div className='col-lg-6 d-flex justify-content-center align-items-center gap-5 w-100 text-center d-flex gap-5 w-100 text-center   '>
+                                    <div className='d-flex gap-4 bg-black w-100 p-5'>
+                                      {/* <div className='col-lg-6 bg-warning'></div>
+                                      <div className='col-lg-6 d-flex justify-content-center align-items-center gap-5 w-100 text-center d-flex gap-5 w-100 text-center'>
                                         {
                                           item.attributes.
                                             url_collections.data.map((list, i) => {
@@ -930,6 +930,44 @@ function Navbar() {
                                             })
                                         }
 
+                                      </div> */}
+                                      <div style={{ lineHeight: "24px" }} className='col-lg-4  text-white'>
+                                        <h1 className='fw-bold'>ABOUT DEMIGOD</h1>
+                                        <p className='smallfont' >Demigod is about consectetur adipisicing elit. Eaque, quos natus rerum maiores est non delectus aspernatur, similique repudiandae tempora obcaecati molestiae nostrum deleniti totam. Consequuntur harum ut ullam esse?</p>
+                                      <div style={{lineHeight:'2px'}}>
+                                          <p className='m-0'>About World of Demigod</p>
+                                          <hr />
+                                      </div>
+                                      </div>
+                                      <div style={{ lineHeight: "24px" }} className='col-lg-5 text-white '>
+                                        <div style={{ lineHeight: '2px' }}>
+                                          <p className='fw-bold'>                                        About Us
+                                          </p>
+                                          <hr />
+                                        </div>
+                                        <div className='d-flex gap-3 des-header'>
+                                          <div className='col-lg-6'>
+                                            <p className='m-0 fw-bold'>Our Team</p>
+                                            <p className='smallfont'>The Amazing Team sit amet  adipisicing elit. Cupiditate eum error nulla mollitia sunt ullam suscipit quis!</p>
+                                          </div>
+                                          <div className='col-lg-6'>
+                                            <p className='m-0 fw-bold'>Carrer at Now</p>
+                                            <p className='smallfont'>Carrer kob listing , sit amet  adipisicing elit. Cupiditate eum error nulla mollitia sunt ullam suscipit quis!</p>
+                                          </div>
+                                        </div>
+                                        <div className='d-flex gap-3'>
+                                          <div className='col-lg-6'>
+                                            <p className='m-0 fw-bold'>Our Partner</p>
+                                            <p className='smallfont'>Explore demigod partnership adipisicing elit. Cupiditate eum error nulla mollitia sunt ullam suscipit quis!</p>
+                                          </div>
+                                          <div className='col-lg-6'>
+                                            <p className='m-0  fw-bold'>Contact With us</p>
+                                            <p className='smallfont'>If You need to talk, sit amet  adipisicing elit. Cupiditate eum error nulla mollitia sunt ullam suscipit quis!</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div className='col-lg-2 '>
+                                        <img className='img-fluid' src='/asserts/images/smallImage.jpg'></img>
                                       </div>
                                     </div>
 
@@ -952,8 +990,8 @@ function Navbar() {
             </div>
           </div>
           <div className='col-lg-3 d-flex justify-content-center align-items-center gap-4 mb-3'>
-            <p className='pt-3'>(+91)91 2988 8502</p>
-            <button style={{ fontSize: '16px' }} className='rounded-pill px-3 py-2 border-0 text-white button-bg '>Quick Enquiry</button>
+            <p className='pt-3 text-white'>(+91)91 2988 8502</p>
+            <button style={{ fontSize: '16px' }} className='rounded-pill px-3 py-2 border-0  button-bg text-black '>Quick Enquiry</button>
           </div>
         </div>
         {/* <div className='d-flex border-top  justify-content-center align-items-center subHeader'>
