@@ -7,6 +7,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Accordion from 'react-bootstrap/Accordion';
 import { Card } from 'react-bootstrap';
 import Link from 'next/link';
+import { MdArrowDropUp } from 'react-icons/md';
 
 
 function OffCanvasExample() {
@@ -899,9 +900,12 @@ function Navbar() {
   console.log(data)
   return (
     <>
+    <div>
+      
+    </div>
       <div className='container-fluid p-0 d-lg-block d-none '>
-        <div className='col-12  d-flex px-5 position-relative bg-black'>
-          <div className='d-flex col-lg-9 '>
+        <div className='col-12  d-flex justify-content-center align-items-center px-5 position-relative bg-black'>
+          <div className='d-flex col-lg-10 '>
             <div className='d-flex gap-5'>
               <img className='logoImage' src='./asserts/images/demigodnew.png'></img>
 
@@ -916,7 +920,12 @@ function Navbar() {
                             <div>
                               <ul className='ul-custom custom-sub-opacity hover mb-0'>
                                 <li className=' linehight fs-6'>
-                                  <p className='list-text fs-6 text-white'> {item.attributes.URLText}</p>
+                                 <div className='d-flex'>
+                                 <p className='list-text fs-6 fw-bold text-white'> {item.attributes.URLText}</p>
+                                 <MdArrowDropUp className='mt-4' size={30} color='white' />
+                                 
+                                 </div>
+
                                   <div style={{ left: "0%", top: '6.5rem', zIndex: '1' }} className='custom-opacity w-100  bg-white d-flex border-top position-absolute  align-items-center '>
                                     <div className='d-flex gap-4 bg-black w-100 p-5'>
                                       {/* <div className='col-lg-6 bg-warning'></div>
@@ -987,22 +996,18 @@ function Navbar() {
                   })
                 }
               </div>
+            
             </div>
+            <div className='col-lg-3 d-flex justify-content-center align-items-center gap-4 mb-3'>
+            <button  className='rounded-pill border-0 fs-6 px-4 text-white fw-bold  button-bg  '>SIGN UP</button>
           </div>
-          <div className='col-lg-3 d-flex justify-content-center align-items-center gap-4 mb-3'>
-            <p className='pt-3 text-white'>(+91)91 2988 8502</p>
-            <button style={{ fontSize: '16px' }} className='rounded-pill px-3 py-2 border-0  button-bg text-black '>Quick Enquiry</button>
           </div>
+          
         </div>
-        {/* <div className='d-flex border-top  justify-content-center align-items-center subHeader'>
-                    <div className='col-lg-8 d-flex gap-5 text-center py-4'>
-                        <p className='border-bottom fw-500'>All Services</p>
-                        <p className='border-bottom fw-500'>Career Counseling</p>
-                        <p className='border-bottom fw-500'>Study Abroad</p>
-                        <p className='border-bottom fw-500'>Test Preparation</p>
-                    </div>
-                </div> */}
+     
       </div>
+
+
       <div className='container-fluid p-0 d-lg-none d-block p-2'>
         <div className='d-flex justify-content-between'>
           <img className='w-25' src='./asserts/images/demigodnew.png'></img>

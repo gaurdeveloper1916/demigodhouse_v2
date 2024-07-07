@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body className={inter.className} suppressHydrationWarning={true}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

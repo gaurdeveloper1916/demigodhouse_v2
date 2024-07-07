@@ -28,8 +28,10 @@ cursor-pointer{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 .button-all:hover {
-  transform: translateY(-5px); /* Move button up slightly on hover */
+  transform: translateY(-5px); 
 }
+
+
 .item-test {
   color: white;
 }
@@ -40,8 +42,25 @@ cursor-pointer{
   color: #EBC013; */
   /* font-size: 25px; */
 }
+.header-hover:hover {
+  background-color: #000000;
+}
+.header-text-new{
+  color: white;
+}
+.header-text-new:hover {
+  color: #866b2f
+}
+.header-drop-icon{
+  color: #866b2f;
+  margin-top: 39px;
+}
+.header-drop-icon:hover {
+  transform: translateY(5px); 
+
+}
 .footer-cont{
-  background-image: url('https://picsum.photos/id/24/4855/1803');
+  background-image: url('https://www.demigodhouse.com/assets/images/index_footer_bg.webp');
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -436,6 +455,7 @@ background-color: #000 !important;
 border: none !important;
 
 }
+
 .accordion-button:not(.collapsed) {
   /* color: var(--bs-accordion-active-color); */
   background-color: transparent !important;

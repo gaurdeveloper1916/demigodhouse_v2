@@ -99,13 +99,13 @@
     border-top-left-radius: var(--bs-accordion-inner-border-radius);
     border-top-right-radius: var(--bs-accordion-inner-border-radius);
     font-weight: 500;
-    font-size: 16px !important;
+    /* font-size: 16px !important; */
     /* font-family: "Playfair Display", serif; */
     color: black;
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed {
-    font-size: 16px !important;
+    /* font-size: 16px !important; */
 }
 
 
@@ -130,7 +130,8 @@ button:not(:disabled),
 button:not(:disabled) {
     cursor: pointer;
     font-weight: 500;
-    font-size: 20px;
+    background-image: linear-gradient(270deg, #866b2f, #dbb85e 50%, #866b2f);
+    
     /* font-family: "Playfair Display",
         serif; */
 }
@@ -146,9 +147,9 @@ button:not(:disabled) {
     /* border-bottom: 1px solid; */
 }
 
-.accordion-body {
+/* .accordion-body {
     padding: 0 !important;
-}
+} */
 
 .accordion-item {
     color: var(--bs-accordion-color);
