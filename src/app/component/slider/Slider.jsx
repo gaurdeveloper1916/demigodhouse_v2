@@ -206,7 +206,7 @@ const Slider = () => {
     {
       "id": 2,
       "attributes": {
-        "URLText": "Weeding",
+        "URLText": "Wedding",
         "url": "#",
         "createdAt": "2024-06-04T09:40:16.115Z",
         "updatedAt": "2024-06-04T09:40:17.431Z",
@@ -484,7 +484,7 @@ const Slider = () => {
 
   return (
     <>
-      <div className="container position-realtive">
+      <div className="container-fluid position-realtive">
         <div
           className="d-flex justify-space-between flex-lg-row flex-column event-container"
           style={{
@@ -564,12 +564,12 @@ const Slider = () => {
           </div>
         </div>
 
-        <div className=' d-flex header-hover w-100  position-fixed top-0 justify-content-center align-items-center   '>
-          <div className='d-flex col-lg-10 '>
-            <div className='d-flex gap-5'>
+        <div className=' d-flex  header-hover  col-lg-10  position-fixed top-0 justify-content-center align-items-center   '>
+         
+            <div className='d-flex justify-content-between '>
               <img className='logoImage' src='./asserts/images/demigodnew.png'></img>
 
-              <div className='d-flex justify-content-center align-items-center gap-2  headerlist  '>
+              <div className='d-flex  justify-content-center align-items-center gap-2  headerlist  '>
                 {
                   data.map((item, i) => {
                     return (
@@ -587,7 +587,7 @@ const Slider = () => {
                                  </div>
 
                                   <div style={{ left: "0%", top: '6.5rem', zIndex: '1' }} className='custom-opacity w-100  bg-white d-flex border-top position-absolute  align-items-center '>
-                                    <div className='d-flex gap-4 bg-black w-100 p-5'>
+                                    <div className='d-flex gap-4 bg-black  p-5'>
                                       {/* <div className='col-lg-6 bg-warning'></div>
                                       <div className='col-lg-6 d-flex justify-content-center align-items-center gap-5 w-100 text-center d-flex gap-5 w-100 text-center'>
                                         {
@@ -656,16 +656,17 @@ const Slider = () => {
                   })
                 }
               </div>
-            
-            </div>
-            <div className='col-lg-3 d-flex justify-content-center align-items-center gap-4 mb-3'>
+              <div className=' d-flex justify-content-center align-items-center mx-3  mb-3'>
             <button  className='rounded-pill border-0 fs-6 px-4 text-white fw-bold  button-bg  '>SIGN UP</button>
           </div>
+            
+            </div>
+           
           </div>
           
         </div>
      
-      </div>
+      
     </>
   );
 };
