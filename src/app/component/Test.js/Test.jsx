@@ -23,7 +23,7 @@ const Test = () => {
     }
   ];
   return (
-    <div className="p-4 container-fluid">
+    <div className="p-4 container">
       <div className="d-flex justify-content-between align-items-center mx-4">
        <div>
          <h4 className="text-white">Prochainement</h4></div>

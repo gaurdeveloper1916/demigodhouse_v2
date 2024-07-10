@@ -48,12 +48,15 @@ cursor-pointer{
 .header-text-new{
   color: white;
 }
+.text-colour-off-white {
+  color: rgba(255, 255, 255, .6);
+}
 .header-text-new:hover {
   color: #866b2f
 }
 .header-drop-icon{
   color: #866b2f;
-  margin-top: 39px;
+  /* margin-top: 39px; */
 }
 .header-drop-icon:hover {
   transform: translateY(5px); 

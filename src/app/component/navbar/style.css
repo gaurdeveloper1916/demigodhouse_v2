@@ -4,7 +4,7 @@
     margin-top: 15px; */
     width: 120px;
     height: 74px;
-    margin-top: 14px;
+    margin-left: 20px;
 }
 
 .custom-sub-opacity:hover>.logoImage {
@@ -42,7 +42,7 @@
 }
 
 .linehight {
-    line-height: 105px;
+    line-height: 71px;
 }
 
 .list-text {
