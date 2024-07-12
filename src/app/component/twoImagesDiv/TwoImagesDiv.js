@@ -8,7 +8,6 @@ function TwoImagesDiv(props) {
                 <div className='col-lg-8 mt-5 '>
                     <h1 className='text-center text-white mb-5 mt-2'>SELECTED WORK</h1>
                     <img className='img-fluid w-100 ' src='/asserts/images/bigImage.jpg'></img>
-                    {/* <hr className='text-white hrClass' /> */}
 
                     <div className='d-flex align-items-center  justify-content-between mx-2 '>
                         <div className='text-white verySmallFont'>

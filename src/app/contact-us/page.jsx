@@ -1,6 +1,5 @@
 import React from "react";
 import { BsInstagram, BsLinkedin, BsMailbox, BsTwitter } from "react-icons/bs";
-
 import {
   FaAngleRight,
   FaFacebook,
@@ -83,7 +82,6 @@ function page(props) {
             ></img>
           </div>
         </div>
-        {/* <button type="button border-0 rounded-pill">Check Us Out</button> */}
         <div className="col-lg-6 ">
           <button
             style={{ marginLeft: "3rem" }}

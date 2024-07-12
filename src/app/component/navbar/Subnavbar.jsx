@@ -9,7 +9,6 @@ import { RiTeamLine } from "react-icons/ri";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Accordion from 'react-bootstrap/Accordion';
 import { RxHamburgerMenu } from "react-icons/rx";
-
 function OffCanvasExample() {
   const data = [
     {
@@ -434,9 +433,6 @@ function OffCanvasExample() {
 
   return (
     <>
-      {/* <Button variant="primary" onClick={handleShow} className="me-2">
-                {name}
-            </Button> */}
       <RxHamburgerMenu onClick={handleShow} className='mt-2 ' size={35} />
       <Offcanvas show={show} onHide={handleClose} placement='end' name='end'>
         <Offcanvas.Header closeButton>
@@ -480,7 +476,7 @@ function OffCanvasExample() {
     </>
   );
 }
-function Subnavbar(props) {
+function Subnavbar() {
   const [isSticky, setIsSticky] = useState(false);
 
   const data = [
@@ -948,18 +944,6 @@ function Subnavbar(props) {
                               className="custom-opacity w-100  bg-white d-flex border-top position-absolute  align-items-center "
                             >
                               <div className="d-flex gap-4 bg-black w-100 p-5">
-                                {/* <div className='col-lg-6 bg-warning'></div>
-                                      <div className='col-lg-6 d-flex justify-content-center align-items-center gap-5 w-100 text-center d-flex gap-5 w-100 text-center'>
-                                        {
-                                          item.attributes.
-                                            url_collections.data.map((list, i) => {
-                                              return (
-                                                <p className=' fw-500 mb-1 '>{list.attributes.URLText}</p>
-                                              )
-                                            })
-                                        }
-
-                                      </div> */}
                                 <div
                                   style={{ lineHeight: "24px" }}
                                   className="col-lg-4  text-white"
@@ -1069,8 +1053,6 @@ function Subnavbar(props) {
                 );
               })}
             </div>
-
-            {/* <button  className='rounded-pill border-0 fs-6 px-4 text-white fw-bold  button-bg  '>SIGN UP</button> */}
             <div className=" d-flex justify-content-center align-items-center mb-3">
               <buton
                 type="button"

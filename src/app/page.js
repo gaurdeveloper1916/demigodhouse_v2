@@ -35,23 +35,16 @@ export default function Home() {
       <Explore />
       <Testtube/>
       <FridayNight/>
-   
-
       <Map />
     
    
       {/* <Curveslider /> */}
-      {/* <Globalevents /> */}
-     
- 
-      
+      {/* <Globalevents /> */} 
       {/* <DesSlider/> */}
       {/* <AnimatedImage/> */}
       {/* <VerticalSlider/> */}
       {/* <MultiMarquee/> */}
       {/* <EventsCarousel/> */}
-   
-
       {/* <Domesticevets/> */}
       {/* <Sliderr/> */}
     </main>

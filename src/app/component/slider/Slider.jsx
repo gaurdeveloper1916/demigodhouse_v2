@@ -501,6 +501,7 @@ const Slider = () => {
   return (
     <>
       <div className="container position-realtive">
+      <Subnavbar/>
         <div
           className="d-flex justify-space-between flex-lg-row flex-column event-container"
           style={{
@@ -512,11 +513,6 @@ const Slider = () => {
           }}
         >
           <div className="col-lg-5 p-3 mt-5">
-            {/* <img
-            className="img-home-slider"
-              style={{ width: "190px", height: "94px" }}
-              src="./asserts/images/demigodnew.png"
-            ></img> */}
             <p className="text-white">2023 | 1hour 40 Minutes | Horror</p>
             <p className="text-white">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
@@ -580,7 +576,7 @@ const Slider = () => {
           </div>
         </div>
 
-        <Subnavbar/>
+     
      
       </div>
     </>
