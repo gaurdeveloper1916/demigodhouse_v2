@@ -222,7 +222,7 @@ const Slider = () => {
     {
       "id": 2,
       "attributes": {
-        "URLText": "Weeding",
+        "URLText": "Wedding",
         "url": "#",
         "createdAt": "2024-06-04T09:40:16.115Z",
         "updatedAt": "2024-06-04T09:40:17.431Z",
@@ -576,9 +576,9 @@ const Slider = () => {
           </div>
         </div>
 
+     </div>
      
-     
-      </div>
+      
     </>
   );
 };
